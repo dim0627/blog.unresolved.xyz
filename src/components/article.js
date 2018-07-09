@@ -1,7 +1,8 @@
 import React from 'react'
-import styles from './article-preview.module.css'
 import Link from 'gatsby-link'
 
 export default ({ article }) => (
-  <div>2</div>
+  <div>
+    <Link to={`/posts/${article.slug}/`}>{article.title}</Link>
+  </div>
 )

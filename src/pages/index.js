@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Hero from '../components/hero'
-import ArticlePreview from '../components/article-preview'
+import Article from '../components/article'
 
 class RootIndex extends React.Component {
   render() {
@@ -21,7 +21,7 @@ class RootIndex extends React.Component {
             {posts.map(({ node }) => {
               return (
                 <li key={node.slug}>
-                  <ArticlePreview article={node} />
+                  <Article article={node} />
                 </li>
               )
             })}
@@ -39,9 +39,7 @@ export const pageQuery = graphql`
     allContentfulPost(sort: { fields: [date], order: DESC }) {
       edges {
         node {
-          title {
-            title
-          }
+          title
           slug
           date(formatString: "MMMM Do, YYYY")
           category {

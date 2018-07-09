@@ -2,8 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import styles from './post.module.css'
-import ArticlePreview from '../components/article-preview'
+import Article from '../components/article'
 
 class PostIndex extends React.Component {
   render() {
@@ -20,7 +19,7 @@ class PostIndex extends React.Component {
             {posts.map(({ node }) => {
               return (
                 <li key={node.slug}>
-                  <ArticlePreview article={node} />
+                  <Article article={node} />
                 </li>
               )
             })}
@@ -38,9 +37,7 @@ export const pageQuery = graphql`
     allContentfulPost(sort: { fields: [date], order: DESC }) {
       edges {
         node {
-          title {
-            title
-          }
+          title
           slug
           date(formatString: "MMMM Do, YYYY")
           category {
