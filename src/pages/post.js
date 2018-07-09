@@ -2,19 +2,19 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import styles from './blog.module.css'
+import styles from './post.module.css'
 import ArticlePreview from '../components/article-preview'
 
-class BlogIndex extends React.Component {
+class PostIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allContentfulBlogPost.edges')
+    const posts = get(this, 'props.data.allContentfulPost.edges')
 
     return (
       <div style={{ background: '#fff' }}>
         <Helmet title={siteTitle} />
         <div className="wrapper">
-          <div className={styles.hero}>Blog</div>
+          <div className={styles.hero}>Post</div>
           <h2 className="section-headline">Recent articles</h2>
           <ul className="article-list">
             {posts.map(({ node }) => {
@@ -31,23 +31,27 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default PostIndex
 
 export const pageQuery = graphql`
-  query BlogIndexQuery {
-    allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
+  query PostIndexQuery {
+    allContentfulPost(sort: { fields: [date], order: DESC }) {
       edges {
         node {
-          title
+          title {
+            title
+          }
           slug
-          publishDate(formatString: "MMMM Do, YYYY")
-          tags
-          heroImage {
+          date(formatString: "MMMM Do, YYYY")
+          category {
+            title
+          }
+          heroPhoto {
             file {
               url
             }
           }
-          description {
+          body {
             childMarkdownRemark {
               html
             }

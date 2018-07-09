@@ -1,7 +1,7 @@
 let contentfulConfig
 
 try {
-  contentfulConfig = require('./.contentful')
+  contentfulConfig = require('./.contentful')[process.env.NODE_ENV]
 } catch (_) {
   contentfulConfig = {
     spaceId: process.env.CONTENTFUL_SPACE_ID,

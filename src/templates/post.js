@@ -2,11 +2,11 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
-import styles from './blog-post.module.css'
+import styles from './post.module.css'
 
-class BlogPostTemplate extends React.Component {
+class PostTemplate extends React.Component {
   render() {
-    const post = get(this.props, 'data.contentfulBlogPost')
+    const post = get(this.props, 'data.contentfulPost')
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
@@ -38,14 +38,16 @@ class BlogPostTemplate extends React.Component {
   }
 }
 
-export default BlogPostTemplate
+export default PostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    contentfulBlogPost(slug: { eq: $slug }) {
-      title
-      publishDate(formatString: "MMMM Do, YYYY")
-      heroImage {
+  query PostBySlug($slug: String!) {
+    contentfulPost(slug: { eq: $slug }) {
+      title {
+        title
+      }
+      date(formatString: "MMMM Do, YYYY")
+      heroPhoto {
         file {
           url
         }
