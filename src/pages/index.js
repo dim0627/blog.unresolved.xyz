@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import Hero from '../components/hero'
-import Article from '../components/article'
+import Hero from '../components/Hero'
+import Article from '../components/Article'
 
 class RootIndex extends React.Component {
   render() {
@@ -12,9 +12,9 @@ class RootIndex extends React.Component {
     const [author] = get(this, 'props.data.allContentfulAuthor.edges')
 
     return (
-      <div style={{ background: '#fff' }}>
-        <Helmet title={siteTitle} />
-        <Hero person={author} />
+      <div>
+        <Helmet title={'1'} />
+        <Hero title={'1'} />
         <div className="wrapper">
           <h2 className="section-headline">Recent articles</h2>
           <ul className="article-list">

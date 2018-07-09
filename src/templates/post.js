@@ -2,6 +2,11 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
+import styled from 'styled-components'
+import Container from '../components/Container'
+
+const ArticleBody = styled.div`
+`
 
 class PostTemplate extends React.Component {
   render() {
@@ -9,27 +14,19 @@ class PostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
-      <div style={{ background: '#fff' }}>
+      <Container>
         <Helmet title={`${post.title} | ${siteTitle}`} />
-        <div className="wrapper">
-          <div className={styles.hero}>
+        <div>
+          <div>
             { post.heroPhoto && <img src={`${post.heroPhoto.file.url}?w=1180&h=400&fit=fill`} alt="" /> }
           </div>
           <h1 className="section-headline">{post.title}</h1>
-          <p
-            style={{
-              display: 'block',
-            }}
-          >
-            {post.publishDate}
+          <p>
+            {post.date}
           </p>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: post.body.childMarkdownRemark.html,
-            }}
-          />
+          <ArticleBody dangerouslySetInnerHTML={{__html: post.body.childMarkdownRemark.html}} />
         </div>
-      </div>
+      </Container>
     )
   }
 }
