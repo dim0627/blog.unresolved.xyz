@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import bases from '../styles/bases'
 
 class Template extends React.Component {
   render() {
@@ -8,8 +9,9 @@ class Template extends React.Component {
     return (
       <main>
         <Helmet>
-          <link rel="stylesheet" type="text/css" href="/styles.css" />
+          <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600" rel="stylesheet" />
         </Helmet>
+        <style>{bases}</style>
         {children()}
       </main>
     )
