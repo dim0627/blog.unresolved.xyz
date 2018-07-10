@@ -4,6 +4,7 @@ import get from 'lodash/get'
 import styled from 'styled-components'
 import Hero from '../components/Hero'
 import Container from '../components/Container'
+import Author from '../components/Author'
 import variables from '../styles/variables'
 
 const ArticleBody = styled.div`
@@ -79,12 +80,11 @@ class PostTemplate extends React.Component {
 
     return (
       <div>
+        <Helmet title={`${post.title} | ${siteTitle}`} />
         <Hero title={post.title} sub={post.date} background={post.heroPhoto.file.url} heading={true} />
         <Container>
-          <Helmet title={`${post.title} | ${siteTitle}`} />
-          <div>
-            <ArticleBody dangerouslySetInnerHTML={{__html: post.body.childMarkdownRemark.html}} />
-          </div>
+          <ArticleBody dangerouslySetInnerHTML={{__html: post.body.childMarkdownRemark.html}} />
+          <Author author={post.author} />
         </Container>
       </div>
     )
@@ -106,6 +106,20 @@ export const pageQuery = graphql`
       body {
         childMarkdownRemark {
           html
+        }
+      }
+      author {
+        name
+        biography {
+          childMarkdownRemark {
+            html
+          }
+        }
+        twitterId
+        profilePhoto {
+          file {
+            url
+          }
         }
       }
     }
