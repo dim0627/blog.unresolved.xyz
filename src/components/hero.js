@@ -35,6 +35,7 @@ const Inner = styled.div`
 
 const Body = styled.div`
   padding: 3rem 0;
+  text-shadow: ${variables.textShadowBase};
 `
 
 const Header = styled.header`
