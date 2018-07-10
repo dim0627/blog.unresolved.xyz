@@ -4,6 +4,8 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Hero from '../components/Hero'
 import Article from '../components/Article'
+import Container from '../components/Container'
+import settings from '../settings/settings'
 
 class RootIndex extends React.Component {
   render() {
@@ -13,9 +15,9 @@ class RootIndex extends React.Component {
 
     return (
       <div>
-        <Helmet title={'1'} />
-        <Hero title={'1'} />
-        <div className="wrapper">
+        <Helmet title={settings.site.title} />
+        <Hero title={settings.site.title} sub={settings.site.description} />
+        <Container>
           <h2 className="section-headline">Recent articles</h2>
           <ul className="article-list">
             {posts.map(({ node }) => {
@@ -26,7 +28,7 @@ class RootIndex extends React.Component {
               )
             })}
           </ul>
-        </div>
+        </Container>
       </div>
     )
   }
