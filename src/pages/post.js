@@ -1,8 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import Article from '../components/article'
+import Hero from '../components/Hero'
+import Article from '../components/Article'
 
 class PostIndex extends React.Component {
   render() {
@@ -10,8 +10,8 @@ class PostIndex extends React.Component {
     const posts = get(this, 'props.data.allContentfulPost.edges')
 
     return (
-      <div style={{ background: '#fff' }}>
-        <Helmet title={siteTitle} />
+      <div>
+        <Helmet title={'1'} />
         <div className="wrapper">
           <div className={styles.hero}>Post</div>
           <h2 className="section-headline">Recent articles</h2>
