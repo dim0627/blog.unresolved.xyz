@@ -3,6 +3,8 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Hero from '../components/Hero'
 import Article from '../components/Article'
+import Container from '../components/Container'
+import settings from '../settings/settings'
 
 class PostIndex extends React.Component {
   render() {
@@ -11,20 +13,15 @@ class PostIndex extends React.Component {
 
     return (
       <div>
-        <Helmet title={'1'} />
-        <div className="wrapper">
-          <div className={styles.hero}>Post</div>
-          <h2 className="section-headline">Recent articles</h2>
-          <ul className="article-list">
-            {posts.map(({ node }) => {
-              return (
-                <li key={node.slug}>
-                  <Article article={node} />
-                </li>
-              )
-            })}
-          </ul>
-        </div>
+        <Helmet title={settings.site.title} />
+        <Hero title={settings.site.title} sub={settings.site.description} background={posts[0].node.heroPhoto.file.url} />
+        <Container>
+          {posts.map(({ node }) => {
+            return (
+              <Article article={node} key={node.slug} />
+            )
+          })}
+        </Container>
       </div>
     )
   }
@@ -40,18 +37,13 @@ export const pageQuery = graphql`
           title
           slug
           date(formatString: "MMMM Do, YYYY")
-          category {
-            title
-          }
           heroPhoto {
             file {
               url
             }
           }
-          body {
-            childMarkdownRemark {
-              html
-            }
+          category {
+            title
           }
         }
       }
