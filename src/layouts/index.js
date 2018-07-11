@@ -3,6 +3,10 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import variables from '../styles/variables'
 import bases from '../styles/bases'
+import Prism from 'prismjs'
+Prism.highlightAll();
+
+require("prism-themes/themes/prism-xonokai.css")
 
 const Footer = styled.footer`
   padding: 1.5rem 1rem;

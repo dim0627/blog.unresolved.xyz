@@ -64,12 +64,19 @@ const ArticleBody = styled.div`
   }
 
   pre {
-    padding: 1rem;
+    margin: 0 -1rem;
+    padding: 1.5rem;
     overflow: scroll;
+    border: 0;
+    border-radius: 8px;
     background-color: #333;
     color: #fff;
     font-family: monospace;
     font-size: .8rem;
+
+    @media screen and (max-width: 767px) {
+      border-radius: 0;
+    }
   }
 `
 
