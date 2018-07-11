@@ -5,7 +5,10 @@ import variables from '../styles/variables'
 import bases from '../styles/bases'
 import favicon from '../images/favicon.png'
 import Prism from 'prismjs'
-Prism.highlightAll();
+
+if (typeof document !== `undefined`) {
+  Prism.highlightAll()
+}
 
 require("prism-themes/themes/prism-xonokai.css")
 
