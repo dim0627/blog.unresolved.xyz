@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import variables from '../styles/variables'
 import bases from '../styles/bases'
+import favicon from '../images/favicon.png'
 import Prism from 'prismjs'
 Prism.highlightAll();
 
@@ -27,6 +28,7 @@ class Template extends React.Component {
       <main>
         <Helmet>
           <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600" rel="stylesheet" />
+          <link rel="shortcut icon" href={favicon} />
         </Helmet>
         <style>{bases}</style>
         {children()}

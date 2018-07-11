@@ -41,7 +41,7 @@ const ArticleBody = styled.div`
   }
 
   a {
-    color: ${variables.colorAccent}
+    color: ${variables.colorAccent};
     text-decoration: underline;
   }
 
