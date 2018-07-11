@@ -13,7 +13,7 @@ const Title = styled.h2 `
   padding-bottom: 2rem;
   color: ${variables.colorMain};
   font-weight: 700;
-  background: -webkit-linear-gradient(0deg, ${variables.colorMain}, ${variables.colorAccent});
+  background: linear-gradient(90deg, ${variables.colorMain}, ${variables.colorAccent});
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 4px;
@@ -29,7 +29,7 @@ const Title = styled.h2 `
     height: .5rem;
     margin: 0 auto;
     border-radius: 50%;
-    background: -webkit-linear-gradient(0deg, ${variables.colorMain}, ${variables.colorAccent});
+    background: linear-gradient(90deg, ${variables.colorMain}, ${variables.colorAccent});
   }
 `
 

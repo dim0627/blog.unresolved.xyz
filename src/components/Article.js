@@ -23,7 +23,7 @@ const Date = styled.div`
 
 export default ({ article }) => (
   <Article>
-    <Link to={`/posts/${article.slug}/`}>
+    <Link to={`/${article.slug}/`}>
       <Title>{article.title}</Title>
       <Date>{article.date}</Date>
     </Link>
