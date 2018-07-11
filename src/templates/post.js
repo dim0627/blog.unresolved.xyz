@@ -69,7 +69,7 @@ const ArticleBody = styled.div`
 
   pre {
     margin: 0 -1rem;
-    padding: 1.5rem;
+    padding: 1rem;
     overflow: scroll;
     border: 0;
     border-radius: 8px;
