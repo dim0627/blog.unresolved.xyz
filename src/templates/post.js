@@ -74,12 +74,16 @@ const ArticleBody = styled.div`
     border: 0;
     border-radius: 8px;
     background-color: #333;
-    color: #fff;
-    font-family: monospace;
-    font-size: .8rem;
 
     @media screen and (max-width: 767px) {
       border-radius: 0;
+    }
+
+    code {
+      color: #fff;
+      font-family: monospace;
+      font-size: .8rem;
+      line-height: 1rem;
     }
   }
 `
