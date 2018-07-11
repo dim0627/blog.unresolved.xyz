@@ -38,7 +38,7 @@ jobs:
 
   yarn-upgrade:
     docker:
-      - image: circleci/node:9.11
+      - image: node:6-alpine
     steps:
       - run: apk add --update --no-cache git openssh-client
       - checkout
