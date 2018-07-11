@@ -14,7 +14,7 @@ class PostIndex extends React.Component {
     return (
       <div>
         <Helmet title={settings.site.title} />
-        <Hero title={settings.site.title} sub={settings.site.description} background={posts[0].node.heroPhoto.file.url} />
+        <Hero title={settings.site.title} sub={settings.site.description} background={posts[0].node.heroPhoto && posts[0].node.heroPhoto.file.url} />
         <Container>
           {posts.map(({ node }) => {
             return (

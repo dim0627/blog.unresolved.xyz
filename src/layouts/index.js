@@ -20,8 +20,14 @@ const Footer = styled.footer`
 `
 
 class Template extends React.Component {
-  componentWillMount() {
+  componentDidMount() {
     Prism.highlightAll()
+  }
+
+  componentWillMount() {
+    if (typeof document !== `undefined`) {
+      Prism.highlightAll()
+    }
   }
 
   render() {

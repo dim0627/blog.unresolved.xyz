@@ -96,7 +96,7 @@ class PostTemplate extends React.Component {
     return (
       <div>
         <Helmet title={`${post.title} | ${siteTitle}`} />
-        <Hero title={post.title} sub={post.date} background={post.heroPhoto.file.url} heading={true} />
+        <Hero title={post.title} sub={post.date} background={post.heroPhoto && post.heroPhoto.file.url} heading={true} />
         <Container>
           <ArticleBody dangerouslySetInnerHTML={{__html: post.body.childMarkdownRemark.html}} />
           <Share title={post.title} url={`${settings.site.siteUrl}/${post.slug}`} />

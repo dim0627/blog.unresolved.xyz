@@ -20,11 +20,11 @@ const Hero = styled.header`
 
   &::before {
     background: linear-gradient(to right, ${variables.colorMain}, ${variables.colorAccent});
-    opacity: .7;
+    opacity: .8;
   }
 
   &::after {
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .5);
   }
 `
 
