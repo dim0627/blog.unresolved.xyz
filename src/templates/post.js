@@ -20,7 +20,7 @@ const ArticleBody = styled.div`
     font-size: 1.6rem;
     font-weight: 700;
     line-height: 2.5rem;
-    background: linear-gradient(0deg, ${variables.colorMain}, ${variables.colorAccent});
+    background: linear-gradient(90deg, ${variables.colorMain}, ${variables.colorAccent});
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -31,7 +31,7 @@ const ArticleBody = styled.div`
       left: 0;
       width: 8rem;
       height: 4px;
-      background: linear-gradient(0deg, ${variables.colorMain}, ${variables.colorAccent});
+      background: linear-gradient(90deg, ${variables.colorMain}, ${variables.colorAccent});
       transform: perspective(70px) rotateY(15deg) rotate(-3deg);
     }
   }

@@ -27,6 +27,7 @@ class Template extends React.Component {
     return (
       <main>
         <Helmet>
+          <meta name="theme-color" content={variables.colorMain} />
           <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600" rel="stylesheet" />
           <link rel="shortcut icon" href={favicon} />
         </Helmet>
