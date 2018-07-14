@@ -42,6 +42,7 @@ jobs:
       - image: circleci/node:9.11
     steps:
       - checkout
+      - run: echo 'export PATH=`yarn global bin`:$PATH' >> $BASH_ENV
       - run: yarn global add ci-yarn-upgrade
       - run: yarn install
       - run: ci-yarn-upgrade --execute --verbose --latest;
@@ -52,11 +53,11 @@ workflows:
     jobs:
       - build
   nightly-yarn-upgrade:
-    # triggers:
-    #   - schedule:
-    #       cron: "0 20 * * *"
-    #       filters:
-    #         branches:
-    #           only: master
+    triggers:
+      - schedule:
+          cron: "0 20 * * *"
+          filters:
+            branches:
+              only: master
     jobs:
       - yarn-upgrade
