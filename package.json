@@ -4,6 +4,7 @@
     "babel-plugin-styled-components": "^1.5.1",
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-styled-components": "^2.0.11",
     "gatsby-source-contentful": "^1.3.38",
     "gatsby-transformer-remark": "^1.7.44",
     "inquirer": "^6.0.0",
