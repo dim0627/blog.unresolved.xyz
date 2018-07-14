@@ -52,11 +52,11 @@ workflows:
     jobs:
       - build
   nightly-yarn-upgrade:
-    triggers:
-      - schedule:
-          cron: "0 20 * * *"
-          filters:
-            branches:
-              only: master
+    # triggers:
+    #   - schedule:
+    #       cron: "0 20 * * *"
+    #       filters:
+    #         branches:
+    #           only: master
     jobs:
       - yarn-upgrade
