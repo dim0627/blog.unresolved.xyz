@@ -8,6 +8,9 @@ import Author from '../components/Author'
 import Share from '../components/Share'
 import variables from '../styles/variables'
 import settings from '../settings/settings'
+import Prism from 'prismjs'
+
+require("prism-themes/themes/prism-xonokai.css")
 
 const ArticleBody = styled.div`
   margin-bottom: 4rem;
@@ -89,6 +92,10 @@ const ArticleBody = styled.div`
 `
 
 class PostTemplate extends React.Component {
+  componentDidMount() {
+    Prism.highlightAll()
+  }
+
   render() {
     const post = get(this.props, 'data.contentfulPost')
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')

@@ -4,9 +4,6 @@ import styled from 'styled-components'
 import variables from '../styles/variables'
 import bases from '../styles/bases'
 import favicon from '../images/favicon.png'
-import Prism from 'prismjs'
-
-require("prism-themes/themes/prism-xonokai.css")
 
 const Footer = styled.footer`
   padding: 1.5rem 1rem;
@@ -20,16 +17,6 @@ const Footer = styled.footer`
 `
 
 class Template extends React.Component {
-  componentDidMount() {
-    Prism.highlightAll()
-  }
-
-  componentWillMount() {
-    if (typeof document !== `undefined`) {
-      Prism.highlightAll()
-    }
-  }
-
   render() {
     const { _, children } = this.props
 
