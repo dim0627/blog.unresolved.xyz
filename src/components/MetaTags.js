@@ -10,6 +10,7 @@ export default ({ title, description, image, url }) => (
 
     <link rel="canonical" href={url} />
 
+    <meta property="og:title" content={title} />
     <meta property="og:site_name" content={settings.site.title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
@@ -17,6 +18,7 @@ export default ({ title, description, image, url }) => (
     <meta property="og:image" content={image}/>
 
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:url" content={url} />
     <meta name="twitter:image" content={image} />

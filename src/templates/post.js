@@ -98,11 +98,10 @@ class PostTemplate extends React.Component {
 
   render() {
     const post = get(this.props, 'data.contentfulPost')
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
       <div>
-        <MetaTags title={`${post.title} | ${siteTitle}`} url={`${settings.site.siteUrl}/${post.slug}`} description={post.body.childMarkdownRemark.excerpt} image={post.heroPhoto && post.heroPhoto.file.url} />
+        <MetaTags title={post.title} url={`${settings.site.siteUrl}/${post.slug}`} description={post.body.childMarkdownRemark.excerpt} image={post.heroPhoto && post.heroPhoto.file.url} />
         <Hero title={post.title} sub={post.date} background={post.heroPhoto && post.heroPhoto.file.url} heading={true} />
         <Container>
           <ArticleBody dangerouslySetInnerHTML={{__html: post.body.childMarkdownRemark.html}} />
