@@ -1,11 +1,11 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import styled from 'styled-components'
 import Hero from '../components/Hero'
 import Container from '../components/Container'
 import Author from '../components/Author'
 import Share from '../components/Share'
+import MetaTags from '../components/MetaTags'
 import variables from '../styles/variables'
 import settings from '../settings/settings'
 import Prism from 'prismjs'
@@ -102,7 +102,7 @@ class PostTemplate extends React.Component {
 
     return (
       <div>
-        <Helmet title={`${post.title} | ${siteTitle}`} />
+        <MetaTags title={`${post.title} | ${siteTitle}`} url={`${settings.site.siteUrl}/${post.slug}`} description={post.body.childMarkdownRemark.excerpt} image={post.heroPhoto && post.heroPhoto.file.url} />
         <Hero title={post.title} sub={post.date} background={post.heroPhoto && post.heroPhoto.file.url} heading={true} />
         <Container>
           <ArticleBody dangerouslySetInnerHTML={{__html: post.body.childMarkdownRemark.html}} />
@@ -129,6 +129,7 @@ export const pageQuery = graphql`
       body {
         childMarkdownRemark {
           html
+          excerpt(pruneLength: 400)
         }
       }
       author {
