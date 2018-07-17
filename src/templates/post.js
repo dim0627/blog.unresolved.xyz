@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import Container from '../components/Container'
 import Author from '../components/Author'
 import Share from '../components/Share'
+import Disqus from '../components/Disqus'
 import MetaTags from '../components/MetaTags'
 import variables from '../styles/variables'
 import settings from '../settings/settings'
@@ -106,6 +107,7 @@ class PostTemplate extends React.Component {
         <Container>
           <ArticleBody dangerouslySetInnerHTML={{__html: post.body.childMarkdownRemark.html}} />
           <Share title={post.title} url={`${settings.site.siteUrl}/${post.slug}`} />
+          <Disqus url={`${settings.site.siteUrl}/${post.slug}`} identifier={post.slug} title={post.title} />
           <Author author={post.author} />
         </Container>
       </div>

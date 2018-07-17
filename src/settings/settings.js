@@ -4,4 +4,7 @@ export default {
     siteUrl: 'https://blog.unresolved.xyz',
     description: 'なんか書きます',
   },
+  disqus: {
+    shortName: "blog-unresolved-xyz",
+  }
 }
