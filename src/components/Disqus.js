@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDisqusThread from 'react-disqus-thread'
+import Disqus from 'disqus-react';
 import settings from '../settings/settings'
 
 export default (config) => (
