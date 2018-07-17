@@ -90,6 +90,34 @@ const ArticleBody = styled.div`
       line-height: 1rem;
     }
   }
+
+  pre[class*="language-"] {
+    border: 0;
+
+    @media screen and (max-width: 767px) {
+      border-radius: 0;
+    }
+  }
+
+  blockquote {
+    margin: 0 -1rem;
+    padding: .5rem 1rem;
+    border: 1px solid ${variables.colorBorder};
+    border-radius: 4px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .08);
+    font-size: .9rem;
+
+    @media screen and (max-width: 767px) {
+      border-right: 0;
+      border-left: 0;
+      border-radius: 0;
+    }
+
+    p {
+      margin: .5rem 0;
+      line-height: 1.25rem;
+    }
+  }
 `
 
 class PostTemplate extends React.Component {
