@@ -39,7 +39,7 @@ jobs:
 
   yarn-upgrade:
     docker:
-      - image: circleci/node:9.11
+      - image: node:9-alpine
     steps:
       - checkout
       - run: echo 'export PATH=`yarn global bin`:$PATH' >> $BASH_ENV
