@@ -130,7 +130,7 @@ class PostTemplate extends React.Component {
 
     return (
       <div>
-        <MetaTags title={post.title} url={`${settings.site.baseUrl}/${post.slug}`} description={post.body.childMarkdownRemark.excerpt} image={post.heroPhoto && post.heroPhoto.file.url} />
+        <MetaTags title={post.title} url={`${settings.site.baseUrl}/${post.slug}`} description={post.body.childMarkdownRemark.excerpt} image={`https:${post.heroPhoto && post.heroPhoto.file.url}`} />
         <Hero title={post.title} sub={post.date} background={post.heroPhoto && post.heroPhoto.file.url} heading={true} />
         <Container>
           <ArticleBody dangerouslySetInnerHTML={{__html: post.body.childMarkdownRemark.html}} />
@@ -149,6 +149,7 @@ export const pageQuery = graphql`
   query PostBySlug($slug: String!) {
     contentfulPost(slug: { eq: $slug }) {
       title
+      slug
       date(formatString: "MMMM Do, YYYY")
       heroPhoto {
         file {

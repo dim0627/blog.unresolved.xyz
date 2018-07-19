@@ -21,7 +21,7 @@ export default ({ title, description, image, url }) => (
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:url" content={url} />
-    <meta name="twitter:image" content={`https:${image}`} />
+    <meta name="twitter:image" content={image} />
 
     <link rel="image_src" href={image} />
     <meta property="og:image" content={image} />
