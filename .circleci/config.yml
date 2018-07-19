@@ -41,6 +41,7 @@ jobs:
     docker:
       - image: node:9-alpine
     steps:
+      - run: apk add --update --no-cache git openssh-client
       - checkout
       - run: echo 'export PATH=`yarn global bin`:$PATH' >> $BASH_ENV
       - run: yarn global add ci-yarn-upgrade
