@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/dim0627/blog.unresolved.xyz/tree/master.svg?style=svg)](https://circleci.com/gh/dim0627/blog.unresolved.xyz/tree/master)
+
 ## Technology Stack
 
 * [Contentful: Content Infrastructure for Digital Teams](https://www.contentful.com/)
