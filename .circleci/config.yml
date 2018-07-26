@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:9.11
+      - image: node:10
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -39,9 +39,8 @@ jobs:
 
   yarn-upgrade:
     docker:
-      - image: node:9-alpine
+      - image: node:10
     steps:
-      - run: apk add --update --no-cache git openssh-client
       - checkout
       - run: echo 'export PATH=`yarn global bin`:$PATH' >> $BASH_ENV
       - run: yarn global add ci-yarn-upgrade
@@ -54,11 +53,11 @@ workflows:
     jobs:
       - build
   nightly-yarn-upgrade:
-    #triggers:
-    #  - schedule:
-    #      cron: "0 20 * * *"
-    #      filters:
-    #        branches:
-    #          only: master
+    triggers:
+      - schedule:
+          cron: "0 20 * * *"
+          filters:
+            branches:
+              only: master
     jobs:
       - yarn-upgrade
