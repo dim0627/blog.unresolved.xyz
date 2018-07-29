@@ -39,7 +39,7 @@ jobs:
 
   yarn-upgrade:
     docker:
-      - image: node:10
+      - image: circleci/ruby:2.5.1-node
     steps:
       - checkout
       - run: echo 'export PATH=`yarn global bin`:$PATH' >> $BASH_ENV
