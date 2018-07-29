@@ -3,7 +3,8 @@
   "plugins": [
     'add-module-exports',
     ["babel-plugin-styled-components", {
-      "ssr": true
+      "ssr": true,
+      "displayName": false
     }],
     ["prismjs", {
         "languages": ["javascript", "css", "markup", "ruby", "yaml", "json", "erb", "diff"],
