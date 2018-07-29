@@ -1,6 +1,6 @@
 export default {
   site: {
-    title: 'unresolved',
+    title: 'blog.unresolved.xyz',
     baseUrl: 'https://blog.unresolved.xyz',
     description: 'なんか書きます',
   },
