@@ -14,7 +14,7 @@
     "prism-themes": "^1.0.1",
     "prismjs": "^1.15.0",
     "react-helmet": "^5.2.0",
-    "styled-components": "^3.4.2",
+    "styled-components": "^3.4.4",
     "yargs-parser": "^10.0.0"
   },
   "devDependencies": {
