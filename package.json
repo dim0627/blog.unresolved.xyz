@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "babel-plugin-prismjs": "^1.0.2",
-    "babel-plugin-styled-components": "^1.6.1",
+    "babel-plugin-styled-components": "^1.6.3",
     "disqus-react": "^1.0.5",
     "gatsby-link": "^1.6.46",
     "gatsby-plugin-google-analytics": "^1.0.31",
