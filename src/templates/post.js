@@ -10,8 +10,7 @@ import MetaTags from '../components/MetaTags'
 import variables from '../styles/variables'
 import settings from '../settings/settings'
 import Prism from 'prismjs'
-
-require("prism-themes/themes/prism-xonokai.css")
+import 'prism-themes/themes/prism-xonokai.css';
 
 const ArticleBody = styled.div`
   margin-bottom: 4rem;

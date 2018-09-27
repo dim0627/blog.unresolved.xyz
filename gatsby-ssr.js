@@ -1,6 +1,6 @@
 import React from "react"
 
-exports.onRenderBody = ({ setPostBodyComponents }) => {
+const onRenderBody = ({ setPostBodyComponents }) => {
   setPostBodyComponents([
     <script
       key={`gatsby-plugin-twitter`}
@@ -25,3 +25,5 @@ exports.onRenderBody = ({ setPostBodyComponents }) => {
     />,
   ])
 }
+
+export default onRenderBody;

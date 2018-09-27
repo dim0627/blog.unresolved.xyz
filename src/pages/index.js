@@ -1,4 +1,5 @@
 import React from 'react'
+import Layout from "../components/layout"
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Hero from '../components/Hero'
@@ -12,7 +13,7 @@ class RootIndex extends React.Component {
     const posts = get(this, 'props.data.allContentfulPost.edges')
 
     return (
-      <div>
+      <Layout location={this.props.location}>
         <Helmet title={settings.site.title} />
         <Hero title={settings.site.title} sub={settings.site.description} background={posts[0].node.heroPhoto && posts[0].node.heroPhoto.file.url} />
         <Container>
@@ -22,7 +23,7 @@ class RootIndex extends React.Component {
             )
           })}
         </Container>
-      </div>
+      </Layout>
     )
   }
 }
