@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Container from '../components/Container'
 import styled from 'styled-components'
-import variables from '../styles/variables'
-import settings from '../settings/settings'
+import variables from '../variables'
+import settings from '../settings'
 
 const Hero = styled.header`
   position: relative;

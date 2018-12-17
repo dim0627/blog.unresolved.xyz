@@ -1,10 +1,12 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Hero from '../components/Hero'
+import Layout from '../components/Layout'
 import Article from '../components/Article'
 import Container from '../components/Container'
-import settings from '../settings/settings'
+import settings from '../settings'
 
 class RootIndex extends React.Component {
   render() {
