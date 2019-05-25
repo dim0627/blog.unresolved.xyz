@@ -35,7 +35,6 @@ jobs:
 
       # run tests!
       - run: yarn lint
-      - run: yarn test
 
   yarn-upgrade:
     docker:
