@@ -1,6 +1,7 @@
 import variables from './variables'
+import { css } from '@emotion/core'
 
-const bases = `
+const bases = css`
 html {
   font-size: 16px;
 }
@@ -13,7 +14,6 @@ body {
   font-weight: 400;
   line-height: 1rem;
   word-wrap: break-word;
-  font-feature-settings: "pwid";
 }
 
 h1,

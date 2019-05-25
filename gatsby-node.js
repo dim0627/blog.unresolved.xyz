@@ -1,24 +1,34 @@
 const Promise = require('bluebird')
 const path = require('path')
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
 
   return new Promise((resolve, reject) => {
-    const postComponent = path.resolve('./src/templates/post.js')
+    const blogPost = path.resolve('./src/templates/blog-post.js')
     resolve(
       graphql(
         `
           {
-            allContentfulPost {
+            allContentfulPost(sort: { fields: [date], order: DESC }) {
               edges {
                 node {
+                  title
                   slug
+                  date(formatString: "MMMM Do, YYYY")
+                  heroPhoto {
+                    file {
+                      url
+                    }
+                  }
+                  category {
+                    title
+                  }
                 }
               }
             }
           }
-          `
+        `
       ).then(result => {
         if (result.errors) {
           console.log(result.errors)
@@ -26,10 +36,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
 
         const posts = result.data.allContentfulPost.edges
-        posts.forEach((post, _) => {
+        posts.forEach((post, index) => {
           createPage({
             path: `/${post.node.slug}/`,
-            component: postComponent,
+            component: blogPost,
             context: {
               slug: post.node.slug
             },

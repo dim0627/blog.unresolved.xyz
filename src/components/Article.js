@@ -1,9 +1,9 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
-import variables from '../styles/variables'
+import variables from '../variables'
 
-const Article = styled.article`
+const ArticleContainer = styled.article`
   margin: 2rem 0;
 
   a {
@@ -22,10 +22,10 @@ const Date = styled.div`
 `
 
 export default ({ article }) => (
-  <Article>
+  <ArticleContainer>
     <Link to={`/${article.slug}/`}>
       <Title>{article.title}</Title>
       <Date>{article.date}</Date>
     </Link>
-  </Article>
+  </ArticleContainer>
 )

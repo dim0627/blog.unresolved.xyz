@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import variables from '../styles/variables'
+import variables from '../variables'
 
 const Author = styled.div`
   margin: 5rem 0;
@@ -81,7 +81,7 @@ export default ({ author }) => (
     <Img src={author.profilePhoto.file.url} alt={author.name} />
     <Details>
       <Name>{author.name}{author.twitterId && <a href={`https://twitter.com/${author.twitterId}`} target='_blank' rel='nofollow'>@{author.twitterId}</a>}</Name>
-      <Biography dangerouslySetInnerHTML={{__html: author.biography.childMarkdownRemark.html}} />
+      <Biography dangerouslySetInnerHTML={{ __html: author.biography.childMarkdownRemark.html }} />
     </Details>
   </Author>
 )

@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import settings from '../settings/settings'
+import settings from '../settings'
 
 export default ({ title, description, image, url }) => (
   <Helmet>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import variables from '../styles/variables'
+import variables from '../variables'
 
 const Share = styled.div`
   display: flex;

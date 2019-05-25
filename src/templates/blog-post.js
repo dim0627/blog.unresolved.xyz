@@ -1,5 +1,8 @@
 import React from 'react'
+import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 import get from 'lodash/get'
+import Layout from '../components/Layout'
 import styled from 'styled-components'
 import Hero from '../components/Hero'
 import Container from '../components/Container'
@@ -7,11 +10,9 @@ import Author from '../components/Author'
 import Share from '../components/Share'
 import Disqus from '../components/Disqus'
 import MetaTags from '../components/MetaTags'
-import variables from '../styles/variables'
-import settings from '../settings/settings'
+import variables from '../variables'
+import settings from '../settings'
 import Prism from 'prismjs'
-
-require("prism-themes/themes/prism-xonokai.css")
 
 const ArticleBody = styled.div`
   margin-bottom: 4rem;
@@ -120,7 +121,7 @@ const ArticleBody = styled.div`
   }
 `
 
-class PostTemplate extends React.Component {
+class BlogPostTemplate extends React.Component {
   componentDidMount() {
     Prism.highlightAll()
   }
@@ -129,24 +130,24 @@ class PostTemplate extends React.Component {
     const post = get(this.props, 'data.contentfulPost')
 
     return (
-      <div>
-        <MetaTags title={post.title} url={`${settings.site.baseUrl}/${post.slug}`} description={post.body.childMarkdownRemark.excerpt} image={`https:${post.heroPhoto && post.heroPhoto.file.url}`} />
+      <Layout>
+        <MetaTags title={post.title} url={`${settings.site.baseUrl}/${post.slug}`} description={post.body ? post.body.childMarkdownRemark.excerpt : ''} image={`https:${post.heroPhoto && post.heroPhoto.file.url}`} />
         <Hero title={post.title} sub={post.date} background={post.heroPhoto && post.heroPhoto.file.url} heading={true} />
         <Container>
-          <ArticleBody dangerouslySetInnerHTML={{__html: post.body.childMarkdownRemark.html}} />
+          <ArticleBody dangerouslySetInnerHTML={{__html: post.body ? post.body.childMarkdownRemark.html : ''}} />
           <Share title={post.title} url={`${settings.site.baseUrl}/${post.slug}`} />
           <Disqus url={`${settings.site.baseUrl}/${post.slug}`} identifier={post.slug} title={post.title} />
-          <Author author={post.author} />
+          { post.author ? <Author author={post.author} /> : ''}
         </Container>
-      </div>
+      </Layout>
     )
   }
 }
 
-export default PostTemplate
+export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query PostBySlug($slug: String!) {
+  query BlogPostBySlug($slug: String!) {
     contentfulPost(slug: { eq: $slug }) {
       title
       slug
