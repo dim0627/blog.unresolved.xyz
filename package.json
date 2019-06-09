@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.10",
-    "@emotion/styled": "^10.0.11",
+    "@emotion/styled": "^10.0.12",
     "babel-plugin-prismjs": "^1.0.2",
     "babel-plugin-styled-components": "^1.10.0",
     "disqus-react": "^1.0.5",
