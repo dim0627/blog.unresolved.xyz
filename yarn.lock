@@ -894,8 +894,8 @@
   resolved "https://registry.yarnpkg.com/@types/mkdirp/-/mkdirp-0.3.29.tgz#7f2ad7ec55f914482fc9b1ec4bb1ae6028d46066"
 
 "@types/node@*":
-  version "12.0.7"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.0.7.tgz#4f2563bad652b2acb1722d7e7aae2b0ff62d192c"
+  version "12.0.8"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.0.8.tgz#551466be11b2adc3f3d47156758f610bd9f6b1d8"
 
 "@types/node@^7.0.11":
   version "7.10.6"
@@ -2533,14 +2533,14 @@ contentful-batch-libs@^9.0.0:
     lodash "^4.0.1"
     moment "^2.18.1"
 
-contentful-import@^7.4.4:
-  version "7.4.4"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-7.4.4.tgz#b5be0967c2763954617d224c1a691fad72b8fbf5"
+contentful-import@^7.4.5:
+  version "7.4.5"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-7.4.5.tgz#9433ffc90ace4ffaca8dcde07a1ffe9578581453"
   dependencies:
     bluebird "^3.5.1"
     cli-table3 "^0.5.1"
     contentful-batch-libs "^9.0.0"
-    contentful-management "^5.7.1"
+    contentful-management "^5.8.0"
     echo-cli "^1.0.8"
     joi "^13.4.0"
     listr "^0.14.1"
@@ -2550,12 +2550,12 @@ contentful-import@^7.4.4:
     moment "^2.22.2"
     yargs "^12.0.1"
 
-contentful-management@^5.7.1:
-  version "5.7.2"
-  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-5.7.2.tgz#f3fbd61b3b844e97425704d79781c3a05d7b71f6"
+contentful-management@^5.8.0:
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-5.8.0.tgz#4ef550fc75c512784ab0a6dd67f2f6a1150707f4"
   dependencies:
-    "@contentful/axios" "^0.18.0"
-    contentful-sdk-core "^6.3.1"
+    axios "^0.19.0"
+    contentful-sdk-core "^6.3.5"
     lodash "^4.17.11"
 
 contentful-resolve-response@^1.1.4:
@@ -2564,9 +2564,9 @@ contentful-resolve-response@^1.1.4:
   dependencies:
     lodash "^4.17.4"
 
-contentful-sdk-core@^6.0.1, contentful-sdk-core@^6.3.1:
-  version "6.3.4"
-  resolved "https://registry.yarnpkg.com/contentful-sdk-core/-/contentful-sdk-core-6.3.4.tgz#ff65f36603a18f2811a0cf88dd9867bedd337737"
+contentful-sdk-core@^6.0.1, contentful-sdk-core@^6.3.5:
+  version "6.3.5"
+  resolved "https://registry.yarnpkg.com/contentful-sdk-core/-/contentful-sdk-core-6.3.5.tgz#e850a266bbbc335662cdd36f7d9904501d4260ed"
   dependencies:
     lodash "^4.17.10"
     qs "^6.5.2"
@@ -4747,9 +4747,9 @@ gatsby-transformer-sharp@^2.1.21:
     semver "^5.6.0"
     sharp "^0.22.1"
 
-gatsby@^2.8.8:
-  version "2.8.8"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.8.8.tgz#050157a18790b831c81db722de1186ac7e247950"
+gatsby@^2.9.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.9.0.tgz#9ced22c19af8b453b22b9e63c0492463e81dab32"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -4818,7 +4818,6 @@ gatsby@^2.8.8:
     graphql "^14.1.1"
     graphql-compose "^6.3.2"
     graphql-playground-middleware-express "^1.7.10"
-    hash-mod "^0.0.5"
     invariant "^2.2.4"
     is-relative "^1.0.0"
     is-relative-url "^2.0.0"
@@ -4827,7 +4826,6 @@ gatsby@^2.8.8:
     joi "^14.0.0"
     json-loader "^0.5.7"
     json-stringify-safe "^5.0.1"
-    kebab-hash "^0.1.2"
     lodash "^4.17.10"
     md5 "^2.2.1"
     md5-file "^3.1.1"
@@ -5300,10 +5298,6 @@ hash-base@^3.0.0:
   dependencies:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
-
-hash-mod@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/hash-mod/-/hash-mod-0.0.5.tgz#daf1e4973a9116643467d54ee7690b43ef802ecc"
 
 hash.js@^1.0.0, hash.js@^1.0.3:
   version "1.1.7"
@@ -6424,12 +6418,6 @@ jsx-ast-utils@^2.0.1, jsx-ast-utils@^2.1.0:
   dependencies:
     array-includes "^3.0.3"
 
-kebab-hash@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/kebab-hash/-/kebab-hash-0.1.2.tgz#dfb7949ba34d8e70114ea7d83e266e5e2a4abaac"
-  dependencies:
-    lodash.kebabcase "^4.1.1"
-
 keyv@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/keyv/-/keyv-3.0.0.tgz#44923ba39e68b12a7cec7df6c3268c031f2ef373"
@@ -6661,10 +6649,6 @@ lodash.isstring@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/lodash.isstring/-/lodash.isstring-4.0.1.tgz#d527dfb5456eca7cc9bb95d5daeaf88ba54a5451"
 
-lodash.kebabcase@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/lodash.kebabcase/-/lodash.kebabcase-4.1.1.tgz#8489b1cb0d29ff88195cceca448ff6d6cc295c36"
-
 lodash.map@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.map/-/lodash.map-4.6.0.tgz#771ec7839e3473d9c4cde28b19394c3562f4f6d3"
@@ -6734,8 +6718,8 @@ logalot@^2.0.0, logalot@^2.1.0:
     squeak "^1.0.0"
 
 loglevel@^1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.2.tgz#668c77948a03dbd22502a3513ace1f62a80cc372"
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.3.tgz#77f2eb64be55a404c9fd04ad16d57c1d6d6b1280"
 
 longest-streak@^2.0.1:
   version "2.0.3"
@@ -10331,8 +10315,8 @@ ts-pnp@^1.1.2:
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.1.2.tgz#be8e4bfce5d00f0f58e0666a82260c34a57af552"
 
 tslib@^1.6.0, tslib@^1.9.0:
-  version "1.9.3"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
 
 tty-browserify@0.0.0:
   version "0.0.0"
@@ -10462,8 +10446,8 @@ unique-filename@^1.1.1:
     unique-slug "^2.0.0"
 
 unique-slug@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/unique-slug/-/unique-slug-2.0.1.tgz#5e9edc6d1ce8fb264db18a507ef9bd8544451ca6"
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/unique-slug/-/unique-slug-2.0.2.tgz#baabce91083fc64e945b0f3ad613e264f7cd4e6c"
   dependencies:
     imurmurhash "^0.1.4"
 
