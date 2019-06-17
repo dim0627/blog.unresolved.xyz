@@ -37,7 +37,7 @@
     "styled-components": "^4.3.1"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.0.2",
     "chalk": "^2.4.2",
     "contentful-import": "^7.4.5",
     "eslint": "^5.16.0",
