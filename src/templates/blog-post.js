@@ -74,7 +74,7 @@ const ArticleBody = styled.div`
 
   code {
     color: #fff;
-    font-family: menlo;
+    font-family: menlo, monospace;
     font-size: .8rem;
     line-height: 1rem;
   }
@@ -94,7 +94,7 @@ const ArticleBody = styled.div`
 
     code {
       color: #fff;
-      font-family: menlo;
+      font-family: menlo, monospace;
       font-size: .8rem;
       line-height: 1rem;
     }
