@@ -72,13 +72,21 @@ const ArticleBody = styled.div`
     }
   }
 
+  code {
+    color: #fff;
+    font-family: menlo;
+    font-size: .8rem;
+    line-height: 1rem;
+  }
+
   pre {
     margin: 0 -1rem;
     padding: 1rem;
     overflow: scroll;
     border: 0;
     border-radius: 8px;
-    background-color: #333;
+    background-color: #000;
+    line-height: 1rem;
 
     @media screen and (max-width: 767px) {
       border-radius: 0;
@@ -86,7 +94,7 @@ const ArticleBody = styled.div`
 
     code {
       color: #fff;
-      font-family: monospace;
+      font-family: menlo;
       font-size: .8rem;
       line-height: 1rem;
     }
