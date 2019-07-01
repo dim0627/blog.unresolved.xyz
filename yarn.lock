@@ -629,7 +629,7 @@
     "@babel/plugin-transform-react-jsx-self" "^7.0.0"
     "@babel/plugin-transform-react-jsx-source" "^7.0.0"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.3":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.3", "@babel/runtime@^7.4.5":
   version "7.4.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.4.5.tgz#582bb531f5f9dc67d2fcb682979894f75e253f12"
   dependencies:
@@ -805,8 +805,8 @@
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-6.2.4.tgz#4b95fbaccbfba90185690890bdf1a2fbbda10595"
 
 "@hapi/hoek@8.x.x":
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-8.0.1.tgz#9712fa2ad124ac64668ab06ba847b1eaf83a03fd"
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-8.0.2.tgz#f63a5ff00e891a4e7aa98f11119f9515c6672032"
 
 "@hapi/joi@^14.0.0":
   version "14.5.0"
@@ -1772,9 +1772,9 @@ babel-plugin-remove-graphql-queries@^2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-2.7.0.tgz#dd5b1201cb90f1197e4588761af602f2e180f60a"
 
-"babel-plugin-styled-components@>= 1", babel-plugin-styled-components@^1.10.4:
-  version "1.10.4"
-  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.10.4.tgz#c9a01d7992e41dc45338792be5ce2cd805e4d868"
+"babel-plugin-styled-components@>= 1", babel-plugin-styled-components@^1.10.5:
+  version "1.10.5"
+  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.10.5.tgz#fc1d0929b8248026985ab312d1fc590d0b3a1ef4"
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.0.0"
     "@babel/helper-module-imports" "^7.0.0"
@@ -2348,8 +2348,8 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30000971, caniuse-lite@^1.0.30000975:
-  version "1.0.30000978"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000978.tgz#1e3346c27fc46bce9ac1ccd77863153a263dde56"
+  version "1.0.30000979"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000979.tgz#92f16d00186a6cf20d6c5711bb6e042a3d667029"
 
 capture-stack-trace@^1.0.0:
   version "1.0.1"
@@ -3710,8 +3710,8 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
 electron-to-chromium@^1.3.164, electron-to-chromium@^1.3.47:
-  version "1.3.179"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.179.tgz#908efa2732ca07ede53bbbb25bb6684623fbe069"
+  version "1.3.181"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.181.tgz#1c538401af8f3eb285db893b66e43f4bea72fd83"
 
 elegant-spinner@^1.0.1:
   version "1.0.1"
@@ -3982,9 +3982,10 @@ eslint-plugin-import@^2.9.0:
     resolve "^1.11.0"
 
 eslint-plugin-jsx-a11y@^6.0.3:
-  version "6.2.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jsx-a11y/-/eslint-plugin-jsx-a11y-6.2.2.tgz#485a71cd90e8e811ec1dd8294ace47a4b7a073b5"
+  version "6.2.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jsx-a11y/-/eslint-plugin-jsx-a11y-6.2.3.tgz#b872a09d5de51af70a97db1eea7dc933043708aa"
   dependencies:
+    "@babel/runtime" "^7.4.5"
     aria-query "^3.0.0"
     array-includes "^3.0.3"
     ast-types-flow "^0.0.7"
@@ -4844,9 +4845,9 @@ gatsby-cli@^2.7.7:
     ink "^2.0.5"
     ink-spinner "^3.0.1"
 
-gatsby-graphiql-explorer@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-0.2.0.tgz#e15aa929212106b96a7e5dea17e9d6aad5215a11"
+gatsby-graphiql-explorer@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-0.2.1.tgz#39acfadd05bac0774be63c2ac1cb628bbd2c905d"
   dependencies:
     "@babel/runtime" "^7.0.0"
 
@@ -4896,9 +4897,9 @@ gatsby-plugin-google-analytics@^2.1.1:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-page-creator@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.1.1.tgz#0d8493ef7d0614080b93370782f4666a11f7333a"
+gatsby-plugin-page-creator@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.1.2.tgz#7e81cf3cd5d051d28fd582e56254d6183479589f"
   dependencies:
     "@babel/runtime" "^7.0.0"
     bluebird "^3.5.0"
@@ -4970,9 +4971,9 @@ gatsby-remark-prismjs@^3.3.0:
     parse-numeric-range "^0.0.2"
     unist-util-visit "^1.3.0"
 
-gatsby-source-contentful@^2.1.3:
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-2.1.3.tgz#b6d08b231e2ad8751f846764004327cbf1802144"
+gatsby-source-contentful@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-2.1.4.tgz#3c26731b61b42176ea81078afb1121a54d3c2d32"
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@hapi/joi" "^14.0.0"
@@ -5067,9 +5068,9 @@ gatsby-transformer-sharp@^2.2.0:
     semver "^5.6.0"
     sharp "^0.22.1"
 
-gatsby@^2.11.6:
-  version "2.11.6"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.11.6.tgz#46018df3a6f9b5e846c61fad3287f25ad667da69"
+gatsby@^2.11.7:
+  version "2.11.7"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.11.7.tgz#96f2187ada6b083e2df4360815bab293d44b2655"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -5129,9 +5130,9 @@ gatsby@^2.11.6:
     fs-exists-cached "1.0.0"
     fs-extra "^5.0.0"
     gatsby-cli "^2.7.7"
-    gatsby-graphiql-explorer "^0.2.0"
+    gatsby-graphiql-explorer "^0.2.1"
     gatsby-link "^2.2.0"
-    gatsby-plugin-page-creator "^2.1.1"
+    gatsby-plugin-page-creator "^2.1.2"
     gatsby-react-router-scroll "^2.1.0"
     gatsby-telemetry "^1.1.2"
     glob "^7.1.1"
@@ -9643,8 +9644,8 @@ semver-truncate@^1.1.2:
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.0.tgz#790a7cf6fea5459bac96110b29b60412dc8ff96b"
 
 semver@^6.0.0, semver@^6.1.1:
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-6.1.2.tgz#079960381376a3db62eb2edc8a3bfb10c7cfe318"
+  version "6.1.3"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-6.1.3.tgz#ef997a1a024f67dd48a7f155df88bb7b5c6c3fc7"
 
 send@0.17.1:
   version "0.17.1"
@@ -10471,8 +10472,8 @@ terser@^3.17.0:
     source-map-support "~0.5.10"
 
 terser@^4.0.0:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-4.0.1.tgz#f2e90b453cff6fb317fc33bb277517753e3e2bef"
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-4.0.2.tgz#580cea06c4932f46a48ed13804c93bc93c275968"
   dependencies:
     commander "^2.19.0"
     source-map "~0.6.1"
