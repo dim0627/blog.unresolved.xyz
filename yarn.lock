@@ -1434,9 +1434,9 @@ address@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/address/-/address-1.0.3.tgz#b5f50631f8d6cec8bd20c963963afb55e06cbce9"
 
-address@1.1.1, address@^1.0.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/address/-/address-1.1.1.tgz#9483d6464788dee73e9a0f9f5d57bedf429b2a70"
+address@1.1.2, address@^1.0.1:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/address/-/address-1.1.2.tgz#bf1116c9c758c51b7a933d296b72c221ed9428b6"
 
 after@0.8.2:
   version "0.8.2"
@@ -1794,16 +1794,16 @@ babel-core@7.0.0-bridge.0:
   version "7.0.0-bridge.0"
   resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-7.0.0-bridge.0.tgz#95a492ddd90f9b4e9a4a1da14eb335b87b634ece"
 
-babel-eslint@^10.0.2:
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-10.0.2.tgz#182d5ac204579ff0881684b040560fdcc1558456"
+babel-eslint@^10.0.3:
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-10.0.3.tgz#81a2c669be0f205e19462fed2482d33e4687a88a"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/parser" "^7.0.0"
     "@babel/traverse" "^7.0.0"
     "@babel/types" "^7.0.0"
-    eslint-scope "3.7.1"
     eslint-visitor-keys "^1.0.0"
+    resolve "^1.12.0"
 
 babel-loader@^8.0.6:
   version "8.0.6"
@@ -3231,8 +3231,8 @@ css-selector-tokenizer@^0.7.0:
     regexpu-core "^1.0.0"
 
 css-to-react-native@^2.2.2:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/css-to-react-native/-/css-to-react-native-2.3.1.tgz#cf0f61e0514846e2d4dc188b0886e29d8bef64a2"
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/css-to-react-native/-/css-to-react-native-2.3.2.tgz#e75e2f8f7aa385b4c3611c52b074b70a002f2e7d"
   dependencies:
     camelize "^1.0.0"
     css-color-keywords "^1.0.0"
@@ -3853,8 +3853,8 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
 electron-to-chromium@^1.3.191, electron-to-chromium@^1.3.47:
-  version "1.3.238"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.238.tgz#6d6496e393a709b7b186823281d49b1a5d96a6cf"
+  version "1.3.241"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.241.tgz#859dc49ab7f90773ed698767372d384190f60cb1"
 
 elegant-spinner@^1.0.1:
   version "1.0.1"
@@ -4163,13 +4163,6 @@ eslint-plugin-react@^7.14.3:
     object.values "^1.1.0"
     prop-types "^15.7.2"
     resolve "^1.10.1"
-
-eslint-scope@3.7.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-3.7.1.tgz#3d63c3edfda02e06e01a452ad88caacc7cdcb6e8"
-  dependencies:
-    esrecurse "^4.1.0"
-    estraverse "^4.1.1"
 
 eslint-scope@^4.0.0, eslint-scope@^4.0.3:
   version "4.0.3"
@@ -5267,9 +5260,9 @@ gatsby-transformer-sharp@^2.2.12:
     semver "^5.7.1"
     sharp "^0.23.0"
 
-gatsby@^2.13.82:
-  version "2.13.82"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.13.82.tgz#6fa896da8e1fb3533f3497780c71584299cc21cd"
+gatsby@^2.14.0:
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.14.0.tgz#ff5e19e6d8dfedbd1c3e41fc10e2f55bd8372ede"
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/core" "^7.5.5"
@@ -5284,11 +5277,11 @@ gatsby@^2.13.82:
     "@reach/router" "^1.2.1"
     "@typescript-eslint/eslint-plugin" "^1.13.0"
     "@typescript-eslint/parser" "^1.13.0"
-    address "1.1.1"
+    address "1.1.2"
     autoprefixer "^9.6.1"
     axios "^0.19.0"
     babel-core "7.0.0-bridge.0"
-    babel-eslint "^10.0.2"
+    babel-eslint "^10.0.3"
     babel-loader "^8.0.6"
     babel-plugin-add-module-exports "^0.3.3"
     babel-plugin-dynamic-import-node "^1.2.0"
@@ -9634,8 +9627,8 @@ regex-not@^1.0.0, regex-not@^1.0.2:
     safe-regex "^1.1.0"
 
 regexp-tree@^0.1.6:
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/regexp-tree/-/regexp-tree-0.1.11.tgz#c9c7f00fcf722e0a56c7390983a7a63dd6c272f3"
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/regexp-tree/-/regexp-tree-0.1.12.tgz#28eaaa6e66eeb3527c15108a3ff740d9e574e420"
 
 regexpp@^2.0.1:
   version "2.0.1"
@@ -9866,7 +9859,7 @@ resolve-url@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/resolve-url/-/resolve-url-0.2.1.tgz#2c637fe77c893afd2a663fe21aa9080068e2052a"
 
-resolve@^1.10.0, resolve@^1.10.1, resolve@^1.11.0, resolve@^1.3.2, resolve@^1.5.0, resolve@^1.8.1:
+resolve@^1.10.0, resolve@^1.10.1, resolve@^1.11.0, resolve@^1.12.0, resolve@^1.3.2, resolve@^1.5.0, resolve@^1.8.1:
   version "1.12.0"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.12.0.tgz#3fc644a35c84a48554609ff26ec52b66fa577df6"
   dependencies:
