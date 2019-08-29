@@ -3860,8 +3860,8 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
 electron-to-chromium@^1.3.191, electron-to-chromium@^1.3.47:
-  version "1.3.243"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.243.tgz#32f64f00fa121532d1d49f5c0a15fd77f52ae889"
+  version "1.3.244"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.244.tgz#7ba5461fa320ab16540a31b1d0defb7ec29b16e4"
 
 elegant-spinner@^1.0.1:
   version "1.0.1"
@@ -4416,10 +4416,6 @@ executable@^4.1.0:
   resolved "https://registry.yarnpkg.com/executable/-/executable-4.1.1.tgz#41532bff361d3e57af4d763b70582db18f5d133c"
   dependencies:
     pify "^2.2.0"
-
-exenv@^1.2.1:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.2.tgz#2ae78e85d9894158670b03d47bec1f03bd91bb9d"
 
 exif-parser@^0.1.12:
   version "0.1.12"
@@ -5061,9 +5057,9 @@ gatsby-link@^2.2.10:
     "@types/reach__router" "^1.2.4"
     prop-types "^15.7.2"
 
-gatsby-page-utils@^0.0.12:
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-0.0.12.tgz#afb0dd9eb5254cff17107d3b6d32cfdfeb76728d"
+gatsby-page-utils@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-0.0.13.tgz#d28eeed2b67e9d1ef9440cec59cd929a0bce05d2"
   dependencies:
     "@babel/runtime" "^7.5.5"
     bluebird "^3.5.5"
@@ -5091,14 +5087,14 @@ gatsby-plugin-google-analytics@^2.1.12:
   dependencies:
     "@babel/runtime" "^7.5.5"
 
-gatsby-plugin-page-creator@^2.1.12:
-  version "2.1.12"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.1.12.tgz#b6f719378736dd79c510a2e8a9543b3ff922f931"
+gatsby-plugin-page-creator@^2.1.13:
+  version "2.1.13"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.1.13.tgz#7d9ee3feb8440f748a1492164134cc2a10c5819c"
   dependencies:
     "@babel/runtime" "^7.5.5"
     bluebird "^3.5.5"
     fs-exists-cached "^1.0.0"
-    gatsby-page-utils "^0.0.12"
+    gatsby-page-utils "^0.0.13"
     glob "^7.1.4"
     lodash "^4.17.15"
     micromatch "^3.1.10"
@@ -5267,9 +5263,9 @@ gatsby-transformer-sharp@^2.2.12:
     semver "^5.7.1"
     sharp "^0.23.0"
 
-gatsby@^2.14.2:
-  version "2.14.2"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.14.2.tgz#d9ec4c1b3935a67f38a950724f75c9d620a91817"
+gatsby@^2.14.6:
+  version "2.14.6"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.14.6.tgz#3ce2034b85929646dccb532f2bf34bb130d50cee"
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/core" "^7.5.5"
@@ -5335,12 +5331,12 @@ gatsby@^2.14.2:
     gatsby-core-utils "^1.0.6"
     gatsby-graphiql-explorer "^0.2.8"
     gatsby-link "^2.2.10"
-    gatsby-plugin-page-creator "^2.1.12"
+    gatsby-plugin-page-creator "^2.1.13"
     gatsby-react-router-scroll "^2.1.6"
     gatsby-telemetry "^1.1.19"
     glob "^7.1.4"
     got "8.3.2"
-    graphql "^14.5.3"
+    graphql "^14.5.4"
     graphql-compose "^6.3.5"
     graphql-playground-middleware-express "^1.7.12"
     invariant "^2.2.4"
@@ -5370,12 +5366,12 @@ gatsby@^2.14.2:
     pnp-webpack-plugin "^1.5.0"
     postcss-flexbugs-fixes "^3.3.1"
     postcss-loader "^2.1.6"
-    prompts "^2.1.0"
+    prompts "^2.2.1"
     prop-types "^15.7.2"
     raw-loader "^0.5.1"
     react-dev-utils "^4.2.3"
     react-error-overlay "^3.0.0"
-    react-hot-loader "^4.12.11"
+    react-hot-loader "^4.12.12"
     redux "^4.0.4"
     redux-thunk "^2.3.0"
     semver "^5.7.1"
@@ -5394,11 +5390,11 @@ gatsby@^2.14.2:
     util.promisify "^1.0.0"
     uuid "^3.3.3"
     v8-compile-cache "^1.1.2"
-    webpack "~4.39.2"
+    webpack "~4.39.3"
     webpack-dev-middleware "^3.7.0"
     webpack-dev-server "^3.8.0"
     webpack-hot-middleware "^2.25.0"
-    webpack-merge "^4.2.1"
+    webpack-merge "^4.2.2"
     webpack-stats-plugin "^0.3.0"
     xstate "^4.6.7"
     yaml-loader "^0.5.0"
@@ -5733,9 +5729,9 @@ graphql-type-json@^0.2.4:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/graphql-type-json/-/graphql-type-json-0.2.4.tgz#545af27903e40c061edd30840a272ea0a49992f9"
 
-graphql@^14.5.3:
-  version "14.5.3"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.5.3.tgz#e025851cc413e153220f4edbbb25d49f55104fa0"
+graphql@^14.5.4:
+  version "14.5.4"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.5.4.tgz#b33fe957854e90c10d4c07c7d26b6c8e9f159a13"
   dependencies:
     iterall "^1.2.2"
 
@@ -7742,8 +7738,8 @@ minimist@~0.0.8:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.10.tgz#de3f98543dbf96082be48ad1a0c7cda836301dcf"
 
 minipass@^2.2.1, minipass@^2.3.5:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/minipass/-/minipass-2.4.0.tgz#38f0af94f42fb6f34d3d7d82a90e2c99cd3ff485"
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/minipass/-/minipass-2.5.0.tgz#dddb1d001976978158a05badfcbef4a771612857"
   dependencies:
     safe-buffer "^5.1.2"
     yallist "^3.0.0"
@@ -9208,7 +9204,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prompts@^2.1.0, prompts@^2.2.1:
+prompts@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/prompts/-/prompts-2.2.1.tgz#f901dd2a2dfee080359c0e20059b24188d75ad35"
   dependencies:
@@ -9456,7 +9452,7 @@ react-helmet@^5.2.1:
     react-fast-compare "^2.0.2"
     react-side-effect "^1.1.0"
 
-react-hot-loader@^4.12.11:
+react-hot-loader@^4.12.12:
   version "4.12.12"
   resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.12.12.tgz#8b33f59efef8a34f64e01f0d9393230d4b4bc6d4"
   dependencies:
@@ -9487,10 +9483,9 @@ react-reconciler@^0.20.0:
     scheduler "^0.13.6"
 
 react-side-effect@^1.1.0:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-1.1.5.tgz#f26059e50ed9c626d91d661b9f3c8bb38cd0ff2d"
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-1.2.0.tgz#0e940c78faba0c73b9b0eba9cd3dda8dfb7e7dae"
   dependencies:
-    exenv "^1.2.1"
     shallowequal "^1.0.1"
 
 react@^16.9.0:
@@ -10145,8 +10140,8 @@ send@0.17.1:
     statuses "~1.5.0"
 
 serialize-javascript@^1.7.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-1.8.0.tgz#9515fc687232e2321aea1ca7a529476eb34bb480"
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-1.9.0.tgz#5b77019d7c3b85fe91b33ae424c53dcbfb6618bd"
 
 serve-index@^1.9.1:
   version "1.9.1"
@@ -11661,7 +11656,7 @@ webpack-log@^2.0.0:
     ansi-colors "^3.0.0"
     uuid "^3.3.2"
 
-webpack-merge@^4.2.1:
+webpack-merge@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-4.2.2.tgz#a27c52ea783d1398afd2087f547d7b9d2f43634d"
   dependencies:
@@ -11678,7 +11673,7 @@ webpack-stats-plugin@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/webpack-stats-plugin/-/webpack-stats-plugin-0.3.0.tgz#6952f63feb9a5393a328d774fb3eccac78d2f51b"
 
-webpack@~4.39.2:
+webpack@~4.39.3:
   version "4.39.3"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.39.3.tgz#a02179d1032156b713b6ec2da7e0df9d037def50"
   dependencies:
