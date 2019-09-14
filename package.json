@@ -41,7 +41,7 @@
     "babel-eslint": "^10.0.3",
     "chalk": "^2.4.2",
     "contentful-import": "^7.5.1",
-    "eslint": "^6.3.0",
+    "eslint": "^6.4.0",
     "eslint-plugin-react": "^7.14.3",
     "gatsby": "^2.15.15",
     "gh-pages": "^2.1.1",
