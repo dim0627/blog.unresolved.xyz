@@ -42,7 +42,7 @@
     "chalk": "^2.4.2",
     "contentful-import": "^7.6.0",
     "eslint": "^6.5.1",
-    "eslint-plugin-react": "^7.15.0",
+    "eslint-plugin-react": "^7.15.1",
     "gatsby": "^2.15.28",
     "gh-pages": "^2.1.1",
     "inquirer": "^7.0.0",
