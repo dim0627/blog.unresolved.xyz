@@ -690,13 +690,13 @@
     "@babel/plugin-syntax-jsx" "^7.2.0"
 
 "@emotion/babel-preset-css-prop@^10.0.17":
-  version "10.0.17"
-  resolved "https://registry.yarnpkg.com/@emotion/babel-preset-css-prop/-/babel-preset-css-prop-10.0.17.tgz#8ec9b6abe5f95c7dfb455e71810c2d3a12929245"
+  version "10.0.22"
+  resolved "https://registry.yarnpkg.com/@emotion/babel-preset-css-prop/-/babel-preset-css-prop-10.0.22.tgz#954ed2ef703f521484152df06eb4424a99383daa"
   dependencies:
     "@babel/plugin-transform-react-jsx" "^7.3.0"
     "@babel/runtime" "^7.5.5"
     "@emotion/babel-plugin-jsx-pragmatic" "^0.1.3"
-    babel-plugin-emotion "^10.0.17"
+    babel-plugin-emotion "^10.0.22"
 
 "@emotion/cache@^10.0.14", "@emotion/cache@^10.0.17":
   version "10.0.19"
@@ -707,24 +707,24 @@
     "@emotion/utils" "0.11.2"
     "@emotion/weak-memoize" "0.2.4"
 
-"@emotion/core@^10.0.21":
-  version "10.0.21"
-  resolved "https://registry.yarnpkg.com/@emotion/core/-/core-10.0.21.tgz#2e8398d2b92fd90d4ed6ac4d0b66214971de3458"
+"@emotion/core@^10.0.22":
+  version "10.0.22"
+  resolved "https://registry.yarnpkg.com/@emotion/core/-/core-10.0.22.tgz#2ac7bcf9b99a1979ab5b0a876fbf37ab0688b177"
   dependencies:
     "@babel/runtime" "^7.5.5"
     "@emotion/cache" "^10.0.17"
-    "@emotion/css" "^10.0.14"
-    "@emotion/serialize" "^0.11.10"
+    "@emotion/css" "^10.0.22"
+    "@emotion/serialize" "^0.11.12"
     "@emotion/sheet" "0.9.3"
     "@emotion/utils" "0.11.2"
 
-"@emotion/css@^10.0.14":
-  version "10.0.14"
-  resolved "https://registry.yarnpkg.com/@emotion/css/-/css-10.0.14.tgz#95dacabdd0e22845d1a1b0b5968d9afa34011139"
+"@emotion/css@^10.0.22":
+  version "10.0.22"
+  resolved "https://registry.yarnpkg.com/@emotion/css/-/css-10.0.22.tgz#37b1abb6826759fe8ac0af0ac0034d27de6d1793"
   dependencies:
-    "@emotion/serialize" "^0.11.8"
+    "@emotion/serialize" "^0.11.12"
     "@emotion/utils" "0.11.2"
-    babel-plugin-emotion "^10.0.14"
+    babel-plugin-emotion "^10.0.22"
 
 "@emotion/hash@0.7.3":
   version "0.7.3"
@@ -740,9 +740,9 @@
   version "0.7.3"
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.3.tgz#5b6b1c11d6a6dddf1f2fc996f74cf3b219644d78"
 
-"@emotion/serialize@^0.11.10", "@emotion/serialize@^0.11.11", "@emotion/serialize@^0.11.8":
-  version "0.11.11"
-  resolved "https://registry.yarnpkg.com/@emotion/serialize/-/serialize-0.11.11.tgz#c92a5e5b358070a7242d10508143306524e842a4"
+"@emotion/serialize@^0.11.12", "@emotion/serialize@^0.11.8":
+  version "0.11.12"
+  resolved "https://registry.yarnpkg.com/@emotion/serialize/-/serialize-0.11.12.tgz#a3de660eab40e030daf2daa722fec2968a378cd4"
   dependencies:
     "@emotion/hash" "0.7.3"
     "@emotion/memoize" "0.7.3"
@@ -754,21 +754,21 @@
   version "0.9.3"
   resolved "https://registry.yarnpkg.com/@emotion/sheet/-/sheet-0.9.3.tgz#689f135ecf87d3c650ed0c4f5ddcbe579883564a"
 
-"@emotion/styled-base@^10.0.17":
-  version "10.0.19"
-  resolved "https://registry.yarnpkg.com/@emotion/styled-base/-/styled-base-10.0.19.tgz#53655274797194d86453354fdb2c947b46032db6"
+"@emotion/styled-base@^10.0.22":
+  version "10.0.22"
+  resolved "https://registry.yarnpkg.com/@emotion/styled-base/-/styled-base-10.0.22.tgz#2b6e86e477ed81bd74aa6cef5f403d500503df5b"
   dependencies:
     "@babel/runtime" "^7.5.5"
     "@emotion/is-prop-valid" "0.8.3"
-    "@emotion/serialize" "^0.11.11"
+    "@emotion/serialize" "^0.11.12"
     "@emotion/utils" "0.11.2"
 
-"@emotion/styled@^10.0.17":
-  version "10.0.17"
-  resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-10.0.17.tgz#0cd38b8b36259541f2c6717fc22607a120623654"
+"@emotion/styled@^10.0.22":
+  version "10.0.22"
+  resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-10.0.22.tgz#ee398710876ebda5a418f84359516c6a1c5c41b1"
   dependencies:
-    "@emotion/styled-base" "^10.0.17"
-    babel-plugin-emotion "^10.0.17"
+    "@emotion/styled-base" "^10.0.22"
+    babel-plugin-emotion "^10.0.22"
 
 "@emotion/stylis@0.8.4":
   version "0.8.4"
@@ -1184,8 +1184,8 @@
   resolved "https://registry.yarnpkg.com/@types/mkdirp/-/mkdirp-0.3.29.tgz#7f2ad7ec55f914482fc9b1ec4bb1ae6028d46066"
 
 "@types/node@*":
-  version "12.11.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.11.2.tgz#75ba3beda30d690b89a5089ca1c6e8e386150b76"
+  version "12.11.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.11.5.tgz#6c3c8dc84988aff11fd2a63d7b5fbf39eaaab7b1"
 
 "@types/node@^7.0.11":
   version "7.10.7"
@@ -1834,14 +1834,14 @@ babel-plugin-dynamic-import-node@^2.3.0:
   dependencies:
     object.assign "^4.1.0"
 
-babel-plugin-emotion@^10.0.14, babel-plugin-emotion@^10.0.17:
-  version "10.0.21"
-  resolved "https://registry.yarnpkg.com/babel-plugin-emotion/-/babel-plugin-emotion-10.0.21.tgz#9ebeb12edeea3e60a5476b0e07c9868605e65968"
+babel-plugin-emotion@^10.0.17, babel-plugin-emotion@^10.0.22:
+  version "10.0.22"
+  resolved "https://registry.yarnpkg.com/babel-plugin-emotion/-/babel-plugin-emotion-10.0.22.tgz#7860b39f96dcc1b79e326987ce29d4fcfff96f52"
   dependencies:
     "@babel/helper-module-imports" "^7.0.0"
     "@emotion/hash" "0.7.3"
     "@emotion/memoize" "0.7.3"
-    "@emotion/serialize" "^0.11.11"
+    "@emotion/serialize" "^0.11.12"
     babel-plugin-macros "^2.0.0"
     babel-plugin-syntax-jsx "^6.18.0"
     convert-source-map "^1.5.0"
@@ -3525,8 +3525,8 @@ deep-map@^1.5.0:
     tslib "^1.6.0"
 
 deepmerge@^4.0.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.2.0.tgz#77a97af6746882cd1ed85d4b925be8cd4120b630"
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.2.1.tgz#018a3e5dfe82b95e35e36a9a29ba15ddb194e40f"
 
 default-gateway@^4.2.0:
   version "4.2.0"
@@ -3804,8 +3804,8 @@ dot-prop@^4.1.0, dot-prop@^4.1.1:
     is-obj "^1.0.0"
 
 dot-prop@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-5.1.0.tgz#bdd8c986a77b83e3fca524e53786df916cabbd8a"
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-5.1.1.tgz#85783b39f2a54e04ae1981489a0ef2b9719bbd7d"
   dependencies:
     is-obj "^2.0.0"
 
@@ -3888,8 +3888,8 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
 electron-to-chromium@^1.3.284, electron-to-chromium@^1.3.47:
-  version "1.3.292"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.292.tgz#7812fc5138619342f1dd5823df6e9cbb7d2820e9"
+  version "1.3.293"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.293.tgz#e52a30026b89276e211be36083a4d7136fd480ea"
 
 elegant-spinner@^1.0.1:
   version "1.0.1"
@@ -4970,9 +4970,9 @@ functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
 
-gatsby-cli@^2.8.4:
-  version "2.8.4"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.8.4.tgz#e4ff3042ab66a23b5611a47f6fe623a800e2ff50"
+gatsby-cli@^2.8.5:
+  version "2.8.5"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.8.5.tgz#5c11a455c73cca949fab6b0a7ca46cd8c10ee3d7"
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/runtime" "^7.6.3"
@@ -5250,9 +5250,9 @@ gatsby-transformer-sharp@^2.3.0:
     semver "^5.7.1"
     sharp "^0.23.1"
 
-gatsby@^2.17.1:
-  version "2.17.1"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.17.1.tgz#c10a28ae4292ccd007b4313de391bee405e66043"
+gatsby@^2.17.2:
+  version "2.17.2"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.17.2.tgz#848498adaf8f470ff63e8d60e78f176cf8c7da0c"
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/core" "^7.6.4"
@@ -5314,7 +5314,7 @@ gatsby@^2.17.1:
     flat "^4.1.0"
     fs-exists-cached "1.0.0"
     fs-extra "^8.1.0"
-    gatsby-cli "^2.8.4"
+    gatsby-cli "^2.8.5"
     gatsby-core-utils "^1.0.15"
     gatsby-graphiql-explorer "^0.2.25"
     gatsby-link "^2.2.22"
@@ -6092,8 +6092,8 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
 
 https-proxy-agent@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-3.0.0.tgz#0106efa5d63d6d6f3ab87c999fa4877a3fd1ff97"
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-3.0.1.tgz#b8c286433e87602311b01c8ea34413d856a4af81"
   dependencies:
     agent-base "^4.3.0"
     debug "^3.1.0"
@@ -9194,9 +9194,9 @@ pretty-error@^2.1.1:
     renderkid "^2.0.1"
     utila "~0.4"
 
-prism-themes@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/prism-themes/-/prism-themes-1.2.0.tgz#a9f5e5e14a82d7cf4fa77a43f8ddcce72952799e"
+prism-themes@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/prism-themes/-/prism-themes-1.3.0.tgz#72e6833c3296a2112b989fa63208c0ce7a4da3a8"
 
 prismjs@^1.17.1:
   version "1.17.1"
@@ -9460,14 +9460,14 @@ react-dev-utils@^4.2.3:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@^16.10.2:
-  version "16.10.2"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.10.2.tgz#4840bce5409176bc3a1f2bd8cb10b92db452fda6"
+react-dom@^16.11.0:
+  version "16.11.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.11.0.tgz#7e7c4a5a85a569d565c2462f5d345da2dd849af5"
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    scheduler "^0.16.2"
+    scheduler "^0.17.0"
 
 react-error-overlay@^3.0.0:
   version "3.0.0"
@@ -9500,8 +9500,8 @@ react-hot-loader@^4.12.15:
     source-map "^0.7.3"
 
 react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
-  version "16.10.2"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.10.2.tgz#984120fd4d16800e9a738208ab1fba422d23b5ab"
+  version "16.11.0"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.11.0.tgz#b85dfecd48ad1ce469ff558a882ca8e8313928fa"
 
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
@@ -9522,9 +9522,9 @@ react-side-effect@^1.1.0:
   dependencies:
     shallowequal "^1.0.1"
 
-react@^16.10.2:
-  version "16.10.2"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.10.2.tgz#a5ede5cdd5c536f745173c8da47bda64797a4cf0"
+react@^16.10.2, react@^16.11.0:
+  version "16.11.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.11.0.tgz#d294545fe62299ccee83363599bf904e4a07fdbb"
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -10067,9 +10067,9 @@ scheduler@^0.15.0:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
-scheduler@^0.16.2:
-  version "0.16.2"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.16.2.tgz#f74cd9d33eff6fc554edfb79864868e4819132c1"
+scheduler@^0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.17.0.tgz#7c9c673e4ec781fac853927916d1c426b6f3ddfe"
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
