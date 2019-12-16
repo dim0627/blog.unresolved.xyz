@@ -43,9 +43,9 @@
     "contentful-import": "^7.6.2",
     "eslint": "^6.7.2",
     "eslint-plugin-react": "^7.17.0",
-    "gatsby": "^2.18.11",
+    "gatsby": "^2.18.12",
     "gh-pages": "^2.1.1",
-    "inquirer": "^7.0.0",
+    "inquirer": "^7.0.1",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.0",
     "yargs-parser": "^16.1.0"
