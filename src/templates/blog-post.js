@@ -46,7 +46,7 @@ const ArticleBody = styled.div`
     color: ${variables.colorMain};
     font-size: 1.2rem;
     font-weight: 700;
-    line-height: 1.5rem;
+    line-height: 2rem;
   }
 
   a {
