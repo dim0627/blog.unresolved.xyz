@@ -2948,14 +2948,14 @@ contentful-batch-libs@^9.0.1:
     lodash "^4.0.1"
     moment "^2.18.1"
 
-contentful-import@^7.6.2:
-  version "7.6.2"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-7.6.2.tgz#fb474a380264ff1bd8af7afebf3c0904f9988f7e"
+contentful-import@^7.7.0:
+  version "7.7.0"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-7.7.0.tgz#a2ee426102e5c92fb7e391a265e8844aa7365f2d"
   dependencies:
     bluebird "^3.5.1"
     cli-table3 "^0.5.1"
     contentful-batch-libs "^9.0.1"
-    contentful-management "^5.11.0"
+    contentful-management "^5.12.1"
     echo-cli "^1.0.8"
     joi "^13.4.0"
     listr "^0.14.1"
@@ -2965,9 +2965,9 @@ contentful-import@^7.6.2:
     moment "^2.22.2"
     yargs "^12.0.1"
 
-contentful-management@^5.11.0:
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-5.12.0.tgz#b40570adcd6791032b9ff3a18bb5a3cdabf2d0cd"
+contentful-management@^5.12.1:
+  version "5.12.1"
+  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-5.12.1.tgz#13081a2ff79c6e5fb682128218fad26ed9cf28ec"
   dependencies:
     axios "^0.19.0"
     contentful-sdk-core "^6.4.0"
