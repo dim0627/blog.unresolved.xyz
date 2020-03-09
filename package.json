@@ -27,7 +27,7 @@
     "gatsby-remark-prismjs": "^3.3.32",
     "gatsby-source-contentful": "^2.1.89",
     "gatsby-transformer-remark": "^2.6.55",
-    "gatsby-transformer-sharp": "^2.3.16",
+    "gatsby-transformer-sharp": "^2.3.17",
     "lodash": "^4.17.15",
     "prism-themes": "^1.3.0",
     "prismjs": "^1.19.0",
