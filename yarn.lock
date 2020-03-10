@@ -5132,9 +5132,9 @@ gatsby-plugin-styled-components@^3.1.20:
   dependencies:
     "@babel/runtime" "^7.7.6"
 
-gatsby-plugin-twitter@^2.1.19:
-  version "2.1.19"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.1.19.tgz#0e58c1f61e82d344ecb5435324d78b430e56c9c2"
+gatsby-plugin-twitter@^2.1.20:
+  version "2.1.20"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.1.20.tgz#d8827d0c237f1f5f768b03622f7260c12231320b"
   dependencies:
     "@babel/runtime" "^7.7.6"
 
