@@ -25,7 +25,7 @@
     "gatsby-plugin-twitter": "^2.1.20",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-prismjs": "^3.3.33",
-    "gatsby-source-contentful": "^2.1.92",
+    "gatsby-source-contentful": "^2.1.95",
     "gatsby-transformer-remark": "^2.6.57",
     "gatsby-transformer-sharp": "^2.3.17",
     "lodash": "^4.17.15",
