@@ -5,7 +5,6 @@ require('dotenv').config({
 module.exports = {
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
-    'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-emotion',
