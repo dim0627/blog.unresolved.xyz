@@ -5147,7 +5147,7 @@ gatsby-plugin-react-helmet@^3.1.23:
   dependencies:
     "@babel/runtime" "^7.7.6"
 
-gatsby-plugin-sharp@^2.4.11, gatsby-plugin-sharp@^2.4.12:
+gatsby-plugin-sharp@^2.4.12:
   version "2.4.12"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.4.12.tgz#36d8e6eb5d33c431ad75ff324247ab42214387c1"
   dependencies:
@@ -5206,9 +5206,9 @@ gatsby-remark-prismjs@^3.3.34:
     parse-numeric-range "^0.0.2"
     unist-util-visit "^1.4.1"
 
-gatsby-source-contentful@^2.1.95:
-  version "2.1.95"
-  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-2.1.95.tgz#f5e6b9f318ed2ee1126a1f1a19d29c990d354488"
+gatsby-source-contentful@^2.1.96:
+  version "2.1.96"
+  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-2.1.96.tgz#d6b30c3cc54a22810b911c26e0a9ec6d01d37313"
   dependencies:
     "@babel/runtime" "^7.7.6"
     "@contentful/rich-text-types" "^13.1.0"
@@ -5221,16 +5221,16 @@ gatsby-source-contentful@^2.1.95:
     deep-map "^1.5.0"
     fs-extra "^8.1.0"
     gatsby-core-utils "^1.0.33"
-    gatsby-plugin-sharp "^2.4.11"
-    gatsby-source-filesystem "^2.1.53"
+    gatsby-plugin-sharp "^2.4.12"
+    gatsby-source-filesystem "^2.1.54"
     is-online "^8.2.1"
     json-stringify-safe "^5.0.1"
     lodash "^4.17.15"
     qs "^6.9.1"
 
-gatsby-source-filesystem@^2.1.53:
-  version "2.1.53"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.1.53.tgz#62dc37c91ec83ebaa560c2ab4009e2ccbf48e092"
+gatsby-source-filesystem@^2.1.54:
+  version "2.1.54"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.1.54.tgz#2dc2fea19b166826ebeb2d9ddcc61d0abbaeffc3"
   dependencies:
     "@babel/runtime" "^7.7.6"
     better-queue "^3.8.10"
