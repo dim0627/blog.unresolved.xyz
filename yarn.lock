@@ -2111,7 +2111,7 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.9.1.tgz#7e33d8f7d449b3f673cd72deb9abdc552dbe528e"
   integrity sha512-wMHVg2EOHaMRxbzgFJ9gtjOOCrI80OHLG14rxi28XwOW8ux6IiEbRCGGGqCtdAIg4FQCbW20k9RsT4y3gJlFug==
 
-axios@^0.19.0, axios@^0.19.1, axios@^0.19.2:
+axios@^0.19.1, axios@^0.19.2:
   version "0.19.2"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
   integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
@@ -5700,10 +5700,10 @@ gatsby-graphiql-explorer@^0.2.37:
   dependencies:
     "@babel/runtime" "^7.8.7"
 
-gatsby-image@^2.2.45:
-  version "2.2.45"
-  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.2.45.tgz#4cd178c7d3697b6a87ee33d1c088cba31a226384"
-  integrity sha512-bJP7ozqginTbNjakPc8tfnJZnCXpGzUvfhhXQgri/+uO61ZEU32++C9OO1z7sTjmkLOeiGDJQljFL0Kw7SXQbA==
+gatsby-image@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.3.0.tgz#4533b9dc784f97332c11d78bddb07fcaacd41cbd"
+  integrity sha512-X/ZAGA9pejQNwO9JpffgWXwlXqnMUQhU5Sk65Q4krs4clwBvggyZIi4UWotWRUmXcy7xDDJTydva+O3Z65zQ4w==
   dependencies:
     "@babel/runtime" "^7.8.7"
     object-fit-images "^3.2.4"
