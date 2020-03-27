@@ -41,7 +41,7 @@
     "gatsby": "^2.20.8",
     "gh-pages": "^2.2.0",
     "prettier": "^2.0.2",
-    "yargs-parser": "^18.1.1"
+    "yargs-parser": "^18.1.2"
   },
   "homepage": "https://github.com/contentful-userland/gatsby-contentful-starter#readme",
   "keywords": [
