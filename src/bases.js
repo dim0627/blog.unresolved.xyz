@@ -3,7 +3,7 @@ import { css } from '@emotion/core'
 
 const bases = css`
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
