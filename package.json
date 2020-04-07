@@ -40,7 +40,7 @@
     "eslint-plugin-react": "^7.19.0",
     "gatsby": "^2.20.13",
     "gh-pages": "^2.2.0",
-    "prettier": "^2.0.3",
+    "prettier": "^2.0.4",
     "yargs-parser": "^18.1.2"
   },
   "homepage": "https://github.com/contentful-userland/gatsby-contentful-starter#readme",
