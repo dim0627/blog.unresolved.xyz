@@ -6037,7 +6037,7 @@ gatsby-cli@^2.11.9:
     ink "^2.7.1"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.1.1, gatsby-core-utils@^1.1.2:
+gatsby-core-utils@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.1.2.tgz#635a0a20bca46dfb1c0dd99a4065aed0c3cf5431"
   integrity sha512-a+nkA7JYlL5ROvI+Ysq2IzRO7EIwAiMEMQWRtmor2KgvGuiVbov4OCfoG3k77s52J0TR7ittrIm1k6xgpxNlCw==
@@ -6053,10 +6053,10 @@ gatsby-graphiql-explorer@^0.3.2:
   dependencies:
     "@babel/runtime" "^7.8.7"
 
-gatsby-image@^2.3.3:
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.3.3.tgz#1274b01fab06012322f72e51ab8148cfcbd06125"
-  integrity sha512-t2GVOovSyPz7q6QBzOO1iAqo39KgR1gi5AhLtRviO/zjrVIEqbzO2MJ8BNiP670dTJMwp98fP0cu8QtriHGfpg==
+gatsby-image@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.3.4.tgz#7bccdfa3408d1f04b0939aa966b0cd36c820a4d3"
+  integrity sha512-qOmYzEOP73fGaCRXb5T/m3tuTjT/KMYe7AIrhm+7EO4tzV3E7KL6pHRPuwzkNVzWYDjXD095eswtJOqAGX8dEA==
   dependencies:
     "@babel/runtime" "^7.8.7"
     object-fit-images "^3.2.4"
