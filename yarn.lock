@@ -6159,10 +6159,10 @@ gatsby-plugin-styled-components@^3.2.3:
   dependencies:
     "@babel/runtime" "^7.8.7"
 
-gatsby-plugin-twitter@^2.2.4:
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.2.4.tgz#d80402f7e7ee550a2a8f50fe0a154250f494fd1b"
-  integrity sha512-xkuxwY5XMXeCGNKbPTKhxV84iA0rEURjKHIx0Hxq9WUBTagA/lFtXrub1MM0i1Y6mWlXI6vex00SNS7A4B20vw==
+gatsby-plugin-twitter@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.2.5.tgz#86580549b2d5420c77ff7a76a0e09f9465ff943e"
+  integrity sha512-uxQHeBLm2eqMt/vvZaLtcosG8b2eI9mBfVWsyUk9LdAIVAfc2FYL6OlECzv9JdMbI9VRijoECjC1UwqhZ5bC9Q==
   dependencies:
     "@babel/runtime" "^7.8.7"
 
