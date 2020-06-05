@@ -79,13 +79,13 @@ const ArticleBody = styled.div`
   }
 
   pre {
-    margin: 0 -1rem;
+    margin: 1rem -1rem;
     padding: 1rem;
     overflow: scroll;
     border: 0;
     border-radius: 8px;
     background-color: #000;
-    line-height: 1rem;
+    line-height: 1.25rem;
 
     @media screen and (max-width: 767px) {
       border-radius: 0;
@@ -95,7 +95,7 @@ const ArticleBody = styled.div`
       color: #fff;
       font-family: menlo, monospace;
       font-size: .8rem;
-      line-height: 1rem;
+      line-height: 1.25rem;
     }
   }
 
