@@ -1,0 +1,38 @@
+.detail {
+  margin: 1rem 0;
+}
+
+.postedAt {
+  color: var(--color-accent_text);
+  font-weight: 900;
+}
+
+.title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.body {
+  margin: 1.5rem 0;
+
+  p {
+    margin: 1.5rem 0;
+  }
+
+  ul,
+  ol {
+    margin: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  li {
+    margin: .5rem 0;
+  }
+
+  h2 {
+    margin: 3rem 0 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 900;
+  }
+}
