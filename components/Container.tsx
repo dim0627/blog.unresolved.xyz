@@ -8,4 +8,3 @@ const Container = ({ children }) => (
 );
 
 export { Container };
-
