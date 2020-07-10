@@ -9,6 +9,10 @@
   list-style: none;
 }
 
+.featuredItem {
+  margin: .5rem 0;
+}
+
 .link {
   color: var(--color-accent-text);
   text-decoration: underline;

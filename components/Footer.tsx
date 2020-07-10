@@ -6,17 +6,19 @@ const Footer = () => (
   <footer className={styles.footer}>
     <Container>
       <ul className={styles.featuredList}>
-        <li>
+        <li className={styles.featuredItem}>
           Hosted on
           {' '}
           <a href="https://vercel.com/" className={styles.link}>Vercel</a>
         </li>
-        <li>
-          Build by
+        <li className={styles.featuredItem}>
+          Made with
           {' '}
           <a href="https://nextjs.org/" className={styles.link}>Next.js</a>
+          {' '}
+          💖
         </li>
-        <li>
+        <li className={styles.featuredItem}>
           Designed by
           {' '}
           <a href="https://yet.unresolved.xyz" className={styles.link}>Daisuke Tsuji</a>
