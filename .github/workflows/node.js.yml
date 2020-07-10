@@ -38,4 +38,3 @@ jobs:
     - run: yarn
     - run: yarn lint:js
     - run: yarn lint:css
-    - run: yarn build
