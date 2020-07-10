@@ -26,6 +26,40 @@
   font-weight: 900;
 }
 
+.categories {
+  margin: .25rem -.25rem;
+  list-style: none;
+}
+
+.categoryItem {
+  position: relative;
+  display: inline-block;
+  margin: 0 .5rem;
+  color: var(--color-main-shallow);
+  border-radius: 4px;
+  font-size: .6rem;
+  font-weight: 900;
+
+  &::before {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: .5rem;
+    margin-right: .5rem;
+    content: '';
+    border-top: 1px solid var(--color-main-shallow);
+  }
+
+  &:hover {
+    color: var(--color-accent-text);
+
+    &::before {
+      border-color: var(--color-accent-text);
+    }
+  }
+}
+
 .body {
   margin: 1.5rem 0;
 
