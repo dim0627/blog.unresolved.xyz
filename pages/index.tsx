@@ -1,9 +1,5 @@
 import Head from 'next/head'
-
-const client = require('contentful').createClient({
-  space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
-  accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN
-})
+import { getPosts } from '../lib/contentful'
 
 export default function Home({ posts }) {
   return (
@@ -17,7 +13,7 @@ export default function Home({ posts }) {
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-        {posts.map(post => <div>{post.title}</div>)}
+        {posts.map(post => <div key={post.slug}>{post.title}</div>)}
       </main>
 
       <style jsx global>{`
@@ -39,11 +35,7 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-  const contentType = await client.getContentTypes()
-  const postContentId = contentType.items.find(contentTypeItem => contentTypeItem.name === 'Post').sys.id
-
-  const entries = await client.getEntries({ content_type: postContentId })
-  const posts = entries.items.map(item => ({ title: item.fields.title, slug: item.fields.slug }))
+  const posts = (await getPosts()).map(item => ({ title: item.fields.title, slug: item.fields.slug }))
 
   return {
     props: { posts }
