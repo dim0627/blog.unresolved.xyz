@@ -1,11 +1,28 @@
 .header {
+  display: flex;
+  align-items: center;
   margin-bottom: 1.5rem;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.header::after {
+  content: '';
+  display: block;
+  flex-grow: 1;
+  margin: 0 1rem;
+  border-top: 2px solid var(--color-main-shallow);
+  opacity: .4;
 }
 
 .logo {
+  margin-left: 1rem;
   color: var(--color-main);
   opacity: .2;
   font-size: 1.2rem;
   font-weight: 900;
+}
+
+.logo:hover {
+  text-decoration: underline;
 }

@@ -16,8 +16,7 @@
 }
 
 .heroImg {
-  min-height: 24rem;
-  height: 40vh;
+  height: 34vh;
   object-fit: cover;
 }
 
@@ -36,11 +35,6 @@
 
   p {
     margin: 1.5rem 0;
-
-    code {
-      font-family: var(--font-family-mono);
-      color: var(--color-accent-text);
-    }
   }
 
   ul,
@@ -53,10 +47,38 @@
     margin: .5rem 0;
   }
 
+  p,
+  li {
+    code {
+      font-family: var(--font-family-mono);
+      color: var(--color-accent-text);
+    }
+  }
+
   h2 {
     margin: 3rem 0 1.5rem;
     font-size: 1.6rem;
     font-weight: 900;
+
+    &::before {
+      display: block;
+      content: '##';
+      color: var(--color-main-shallow);
+      font-size: .8rem;
+    }
+  }
+
+  h3 {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 900;
+
+    &::before {
+      display: block;
+      content: '###';
+      color: var(--color-main-shallow);
+      font-size: .8rem;
+    }
   }
 
   img {
