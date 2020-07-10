@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { getPosts } from '../lib/contentful'
 
 export default function Slug({ post }) {
   return (
@@ -15,19 +16,17 @@ export default function Slug({ post }) {
 }
 
 export async function getStaticProps({ params }) {
-  console.log(params)
-  const postData = { title: 'abc' }
+  const post = (await getPosts({ 'fields.slug': params.slug }))[0]
 
-  return {
-    props: {
-      post: postData
-    }
-  }
+  return { props: { post: post.fields } }
 }
 
 export async function getStaticPaths() {
+  const posts = await getPosts()
+  const paths = posts.map(post => ({ params: { slug: post.fields.slug } }))
+
   return {
-    paths: [{ params: { slug: 'abc' } }],
+    paths,
     fallback: false
   }
 }

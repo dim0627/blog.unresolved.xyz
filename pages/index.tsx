@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import { getPosts } from '../lib/contentful'
 
 export default function Home({ posts }) {
@@ -13,7 +14,7 @@ export default function Home({ posts }) {
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-        {posts.map(post => <div key={post.slug}>{post.title}</div>)}
+        {posts.map(post => <Link href={`/${post.slug}`}><a key={post.slug}>{post.title}</a></Link>)}
       </main>
 
       <style jsx global>{`
