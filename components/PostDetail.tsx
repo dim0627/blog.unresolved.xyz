@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { monokai } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 import { Container } from '../components/Container'
+import { AuthorNeedle } from '../components/AuthorNeedle'
 import styles from './PostDetail.module.scss';
 
 const CodeBlock = ({ language, value }) => {
@@ -14,8 +15,6 @@ const CodeBlock = ({ language, value }) => {
 };
 
 const PostDetail = ({ post }) => {
-  console.log(post.category)
-
   return (
     <article className={styles.detail}>
       <Container>
@@ -35,6 +34,9 @@ const PostDetail = ({ post }) => {
       <Container>
         <div className={styles.body}>
           <ReactMarkdown source={post.body} renderers={{ code: CodeBlock }} />
+        </div>
+        <div className={styles.author}>
+          <AuthorNeedle author={post.author.fields} />
         </div>
         <div className={styles.disqus}>
           <DiscussionEmbed

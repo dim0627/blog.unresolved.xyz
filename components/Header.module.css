@@ -11,7 +11,7 @@
   display: block;
   flex-grow: 1;
   margin: 0 1rem;
-  border-top: 2px solid var(--color-main-shallow);
+  border-top: 2px solid var(--color-main-border);
 }
 
 .logo {
