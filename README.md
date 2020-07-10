@@ -1,3 +1,5 @@
+![Node.js CI](https://github.com/dim0627/blog.unresolved.xyz/workflows/Node.js%20CI/badge.svg)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
