@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 import { GitHub, Twitter } from 'react-feather';
 import styles from './AuthorNeedle.module.scss';
 
@@ -16,7 +17,7 @@ const AuthorNeedle = ({ author }) => (
       <div className={styles.details}>
         <h2 className={styles.name}>{author.name}</h2>
         <div className={styles.bio}>
-          {author.biography}
+          <ReactMarkdown source={author.biography} escapeHtml={false} />
         </div>
         <ul className={styles.socials}>
           <li className={styles.socialItem}>
