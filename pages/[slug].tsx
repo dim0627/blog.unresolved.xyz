@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { getPosts } from '../lib/contentful'
-import { Container } from '../components/Container'
 import { PostDetail } from '../components/PostDetail'
 
 export default function Slug({ post }) {
@@ -11,9 +10,7 @@ export default function Slug({ post }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Container>
-          <PostDetail post={post} />
-        </Container>
+        <PostDetail post={post} />
       </main>
     </div>
   )

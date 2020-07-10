@@ -3,7 +3,7 @@
 }
 
 .postedAt {
-  color: var(--color-accent_text);
+  color: var(--color-accent-text);
   font-size: .8rem;
   font-weight: 900;
 }
@@ -12,4 +12,8 @@
   margin: 0;
   font-size: 1.2rem;
   font-weight: 900;
+}
+
+.titleAnchor:hover {
+  text-decoration: underline;
 }

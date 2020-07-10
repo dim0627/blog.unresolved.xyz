@@ -1,21 +1,25 @@
 ::-moz-selection {
-  background: var(--color-main-bg);
+  background: var(--color-accent-text);
   color: #fff;
 }
 
 ::selection {
-  background: var(--color-main-bg);
+  background: var(--color-accent-text);
   color: #fff;
 }
 
 ::placeholder {
-  color: var(--color-main-text-shallow);
+  color: var(--color-main);
 }
 
 :root {
-  --color-main-text: #2f163b;
+  --font-family-mono: menlo, monospace;
+  --color-main: #2f163b;
+  --color-main-shallow: rgba(47, 22, 59, .2);
   --color-base-text: #2f163b;
-  --color-accent_text: #a92c49;
+  --color-accent-text: #fb7963;
+  --radius-base: 18px;
+  --spacer: 1rem;
 }
 
 html,
