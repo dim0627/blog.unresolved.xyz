@@ -3,12 +3,26 @@
 
   .title {
     display: flex;
-    margin-bottom: 1.5rem;
     align-items: center;
+    margin-bottom: 1.5rem;
     color: var(--color-main-shallow);
     font-weight: 900;
-    letter-spacing: .25rem;;
+    letter-spacing: .25rem;
     text-transform: uppercase;
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      flex-grow: 1;
+      margin: 0 1rem;
+      border-top: 2px solid var(--color-main-border);
+    }
+
+    &::before {
+      flex-grow: 0;
+      width: 2rem;
+    }
   }
 
   .body {
@@ -37,22 +51,6 @@
 
     @media (max-width: 600px) {
       padding-left: 1rem;
-    }
-  }
-
-  .title {
-    &::before,
-    &::after {
-      content: '';
-      display: block;
-      flex-grow: 1;
-      margin: 0 1rem;
-      border-top: 2px solid var(--color-main-border);
-    }
-
-    &::before {
-      flex-grow: 0;
-      width: 2rem;
     }
   }
 
