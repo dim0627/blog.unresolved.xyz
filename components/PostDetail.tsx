@@ -1,3 +1,4 @@
+import { DiscussionEmbed } from 'disqus-react';
 import ReactMarkdown from 'react-markdown'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { monokai } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
@@ -27,6 +28,19 @@ const PostDetail = ({ post }) => {
       <Container>
         <div className={styles.body}>
           <ReactMarkdown source={post.body} renderers={{ code: CodeBlock }} />
+        </div>
+        <div className={styles.disqus}>
+          <DiscussionEmbed
+              shortname='blog-unresolved-xyz'
+              config={
+                  {
+                      url: `https://blog.unresolved.xyz/${post.slug}`,
+                      identifier: post.slug,
+                      title: post.title,
+                      language: 'ja'
+                  }
+              }
+          />
         </div>
       </Container>
     </article>
