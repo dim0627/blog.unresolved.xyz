@@ -13,7 +13,7 @@ export default function Home({ posts }) {
 
       <main>
         <Container>
-          {posts.map(post => <PostNeedle post={post} />)}
+          {posts.map(post => <PostNeedle key={post.slug} post={post} />)}
         </Container>
       </main>
     </div>
