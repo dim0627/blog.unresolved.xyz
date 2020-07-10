@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import { getPosts } from '../lib/contentful'
-import { PostDetail } from '../components/PostDetail'
+import { getPosts } from '../../lib/contentful'
+import { PostDetail } from '../../components/PostDetail'
 
 export default function Slug({ post }) {
   return (
