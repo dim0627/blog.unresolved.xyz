@@ -16,6 +16,7 @@
   --font-family-mono: menlo, monospace;
   --color-main: #2f163b;
   --color-main-shallow: rgba(47, 22, 59, .2);
+  --color-main-border: rgba(47, 22, 59, .1);
   --color-base-text: #2f163b;
   --color-accent-text: #fb7963;
   --radius-base: 18px;
