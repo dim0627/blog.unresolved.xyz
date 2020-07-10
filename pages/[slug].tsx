@@ -7,6 +7,7 @@ export default function Slug({ post }) {
     <div className="container">
       <Head>
         <title>{post.title} - blog.unresolved.xyz</title>
+        <meta name="description" content={post.body}></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
