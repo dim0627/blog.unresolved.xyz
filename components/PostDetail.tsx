@@ -40,7 +40,7 @@ const PostDetail = ({ post }) => (
     </div>
     <Container>
       <div className={styles.body}>
-        <ReactMarkdown source={post.body} renderers={{ code: CodeBlock }} />
+        <ReactMarkdown source={post.body} renderers={{ code: CodeBlock }} escapeHtml={false} />
       </div>
       <div className={styles.author}>
         <AuthorNeedle author={post.author.fields} />
