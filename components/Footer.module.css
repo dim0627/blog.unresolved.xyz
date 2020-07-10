@@ -1,0 +1,15 @@
+.footer {
+  margin-top: 3rem;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.featuredList {
+  font-size: .8rem;
+  list-style: none;
+}
+
+.link {
+  color: var(--color-accent-text);
+  text-decoration: underline;
+}
