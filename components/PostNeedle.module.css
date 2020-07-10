@@ -1,0 +1,19 @@
+.needle {
+  margin: 1rem 0;
+}
+
+.postedAt {
+  color: var(--color-accent-text);
+  font-size: .8rem;
+  font-weight: 900;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.titleAnchor:hover {
+  text-decoration: underline;
+}

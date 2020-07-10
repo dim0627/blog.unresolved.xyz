@@ -1,15 +1,16 @@
 import Head from 'next/head'
 import { getPosts } from '../lib/contentful'
+import { PostDetail } from '../components/PostDetail'
 
 export default function Slug({ post }) {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>{post.title} - blog.unresolved.xyz</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        {post.title}
+        <PostDetail post={post} />
       </main>
     </div>
   )

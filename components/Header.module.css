@@ -1,0 +1,11 @@
+.header {
+  margin-bottom: 1.5rem;
+  padding: 1rem 0;
+}
+
+.logo {
+  color: var(--color-main);
+  opacity: .2;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
