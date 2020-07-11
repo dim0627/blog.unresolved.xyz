@@ -30,7 +30,7 @@
   }
 
   .profilePhoto {
-    width: 14rem;
+    width: 10rem;
 
     @media (max-width: 600px) {
       min-width: 4rem;
@@ -62,6 +62,7 @@
 
   .bio {
     margin-bottom: .5rem;
+    font-size: .9rem;
 
     p {
       margin: .5rem 0;
