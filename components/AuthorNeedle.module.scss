@@ -1,86 +1,86 @@
 .author {
   margin: 3rem 0;
+}
 
-  .title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.5rem;
-    color: var(--color-main-shallow);
-    font-weight: 900;
-    letter-spacing: .25rem;
-    text-transform: uppercase;
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  color: var(--color-main-shallow);
+  font-weight: 900;
+  letter-spacing: .25rem;
+  text-transform: uppercase;
 
-    &::before,
-    &::after {
-      content: '';
-      display: block;
-      flex-grow: 1;
-      margin: 0 1rem;
-      border-top: 2px solid var(--color-main-border);
-    }
-
-    &::before {
-      flex-grow: 0;
-      width: 2rem;
-    }
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    flex-grow: 1;
+    margin: 0 1rem;
+    border-top: 2px solid var(--color-main-border);
   }
 
-  .body {
-    display: flex;
+  &::before {
+    flex-grow: 0;
+    width: 2rem;
   }
+}
 
-  .profilePhoto {
-    width: 10rem;
+.body {
+  display: flex;
+}
 
-    @media (max-width: 600px) {
-      min-width: 4rem;
-    }
+.profilePhoto {
+  width: 10rem;
+
+  @media (max-width: 600px) {
+    min-width: 4rem;
   }
+}
 
-  .profilePhotoImg {
-    border-radius: var(--radius-base);
-    box-shadow: 0 .5rem 4rem 0 var(--color-main-shallow);
+.profilePhotoImg {
+  border-radius: var(--radius-base);
+  box-shadow: 0 .5rem 4rem 0 var(--color-main-shallow);
 
-    @media (max-width: 600px) {
-      border-radius: 4px;
-    }
+  @media (max-width: 600px) {
+    border-radius: 4px;
   }
+}
 
-  .details {
-    padding-left: 1.5rem;
+.details {
+  padding-left: 1.5rem;
 
-    @media (max-width: 600px) {
-      padding-left: 1rem;
-    }
+  @media (max-width: 600px) {
+    padding-left: 1rem;
   }
+}
 
-  .name {
-    margin-bottom: .5rem;
-    font-size: 1.4rem;
-    font-weight: 900;
+.name {
+  margin-bottom: .5rem;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.bio {
+  margin-bottom: .5rem;
+  font-size: .9rem;
+
+  p {
+    margin: .5rem 0;
   }
+}
 
-  .bio {
-    margin-bottom: .5rem;
-    font-size: .9rem;
+.socials {
+  margin: 0 -.5rem;
+  list-style: none;
+}
 
-    p {
-      margin: .5rem 0;
-    }
-  }
+.socialItem {
+  display: inline-block;
+  margin: 0 .5rem;
+}
 
-  .socials {
-    margin: 0 -.5rem;
-    list-style: none;
-  }
-
-  .socialItem {
-    display: inline-block;
-    margin: 0 .5rem;
-  }
-
-  .socialAnchor {
-    display: inline-block;
-    padding: .5rem;
-  }
+.socialAnchor {
+  display: inline-block;
+  padding: .5rem;
 }
