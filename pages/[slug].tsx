@@ -14,12 +14,13 @@ export default function Slug({ post }) {
         </title>
         <meta name="description" content={post.body} />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content={post.title} />
         <meta property="og:site_name" content="blog.unresolved.xyz" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content={post.body} />
         <meta property="og:url" content={`https://blog.unresolved.xyz/${post.slug}`} />
         <meta property="og:image" content={post.heroPhoto.fields.file.url} />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:description" content={post.body} />
         <meta name="twitter:url" content={`https://blog.unresolved.xyz/${post.slug}`} />
         <meta name="twitter:image" content={post.heroPhoto.fields.file.url} />
