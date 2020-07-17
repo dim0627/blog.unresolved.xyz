@@ -24,7 +24,7 @@ export default function Slug({ post }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:description" content={post.body} />
         <meta name="twitter:url" content={`https://blog.unresolved.xyz/${post.slug}`} />
-        <meta name="twitter:image" content={post.heroPhoto.fields.file.url} />
+        <meta name="twitter:image" content={`https:${post.heroPhoto.fields.file.url}`} />
         <meta name="author" content={post.author.fields.name} />
       </Head>
       <main>
