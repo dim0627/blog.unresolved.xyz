@@ -20,6 +20,7 @@ export default function Slug({ post }) {
         <meta property="og:description" content={post.body} />
         <meta property="og:url" content={`https://blog.unresolved.xyz/${post.slug}`} />
         <meta property="og:image" content={post.heroPhoto.fields.file.url} />
+        <meta name="twitter:title" content={post.title} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:description" content={post.body} />
         <meta name="twitter:url" content={`https://blog.unresolved.xyz/${post.slug}`} />
