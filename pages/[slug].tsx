@@ -5,7 +5,7 @@ import { PostDetail } from '../components/PostDetail';
 
 export default function Slug({ post }) {
   return (
-    <div className="container">
+    <>
       <Head>
         <title>
           {post.title}
@@ -30,7 +30,7 @@ export default function Slug({ post }) {
       <main>
         <PostDetail post={post} />
       </main>
-    </div>
+    </>
   );
 }
 
