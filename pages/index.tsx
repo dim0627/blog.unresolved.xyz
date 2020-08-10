@@ -6,7 +6,7 @@ import { PostNeedle } from '../components/PostNeedle';
 
 export default function Home({ posts }) {
   return (
-    <div className="container">
+    <>
       <Head>
         <title>blog.unresolved.xyz</title>
         <link rel="icon" href="/favicon.ico" />
@@ -17,7 +17,7 @@ export default function Home({ posts }) {
           {posts.map((post) => <PostNeedle key={post.slug} post={post} />)}
         </Container>
       </main>
-    </div>
+    </>
   );
 }
 
