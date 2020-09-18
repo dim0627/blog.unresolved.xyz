@@ -18,7 +18,7 @@
     "react-feather": "^2.0.8",
     "react-markdown": "^4.3.1",
     "react-syntax-highlighter": "^13.5.3",
-    "sass": "^1.26.10"
+    "sass": "^1.26.11"
   },
   "devDependencies": {
     "@types/node": "^14.11.1",
