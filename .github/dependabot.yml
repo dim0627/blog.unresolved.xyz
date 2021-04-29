@@ -1,0 +1,17 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "11:00"
+  open-pull-requests-limit: 10
+  reviewers:
+  - dim0627
+  ignore:
+  - dependency-name: react-markdown
+    versions:
+    - 6.0.0
+  - dependency-name: sass
+    versions:
+    - 1.32.10
