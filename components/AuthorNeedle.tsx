@@ -17,7 +17,9 @@ const AuthorNeedle = ({ author }) => (
       <div className={styles.details}>
         <h2 className={styles.name}>{author.name}</h2>
         <div className={styles.bio}>
-          <ReactMarkdown source={author.biography} escapeHtml={false} />
+          <ReactMarkdown>
+            {author.biography}
+          </ReactMarkdown>
         </div>
         <ul className={styles.socials}>
           <li className={styles.socialItem}>
