@@ -7,10 +7,15 @@ import { Container } from './Container';
 import { AuthorNeedle } from './AuthorNeedle';
 import styles from './PostDetail.module.scss';
 
-const CodeBlock = ({ language, value }) => (
-  <SyntaxHighlighter language={language} style={monokai}>
-    {value}
-  </SyntaxHighlighter>
+const CodeBlock = ({
+  inline, className, children,
+}) => (
+  inline ? <code>{children}</code>
+    : (
+      <SyntaxHighlighter language={className} style={monokai}>
+        {children}
+      </SyntaxHighlighter>
+    )
 );
 
 const PostDetail = ({ post }) => (
@@ -40,7 +45,15 @@ const PostDetail = ({ post }) => (
     </div>
     <Container>
       <div className={styles.body}>
-        <ReactMarkdown source={post.body} renderers={{ code: CodeBlock }} escapeHtml={false} />
+        <ReactMarkdown
+          components={{
+            code: ({
+              inline, className, children,
+            }) => <CodeBlock className={className} inline={inline}>{children}</CodeBlock>,
+          }}
+        >
+          {post.body}
+        </ReactMarkdown>
       </div>
       <div className={styles.author}>
         <AuthorNeedle author={post.author.fields} />
