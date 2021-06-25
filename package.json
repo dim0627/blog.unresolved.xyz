@@ -10,7 +10,7 @@
     "lint:css": "yarn stylelint './{pages,components}/*.{scss,css}'"
   },
   "dependencies": {
-    "contentful": "^8.4.0",
+    "contentful": "^8.4.2",
     "disqus-react": "^1.1.0",
     "next": "10.2.3",
     "react": "17.0.2",
