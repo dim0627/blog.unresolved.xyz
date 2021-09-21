@@ -21,7 +21,7 @@
     "sass": "^1.41.1"
   },
   "devDependencies": {
-    "@types/node": "^16.9.1",
+    "@types/node": "^16.9.4",
     "@types/react": "^17.0.22",
     "@typescript-eslint/eslint-plugin": "^4.0.0",
     "@typescript-eslint/parser": "^3.10.1",
