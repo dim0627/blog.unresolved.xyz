@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "contentful": "^8.5.7",
-    "disqus-react": "^1.1.1",
+    "disqus-react": "^1.1.2",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
