@@ -4,7 +4,7 @@ import { InferGetStaticPropsType } from 'next';
 import { getPosts } from '../../lib/contentful';
 import { PostDetail } from '../../components/PostDetail';
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }: any) {
   const post = (await getPosts({ 'fields.slug': params.slug }))[0];
 
   return { props: { post: post.fields } };
