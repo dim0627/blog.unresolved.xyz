@@ -52,6 +52,7 @@ const PostDetail = ({ post }) => (
       <div className={styles.body}>
         <ReactMarkdown
           components={{
+            // @ts-ignore
             code: CodeBlock,
           }}
         >
