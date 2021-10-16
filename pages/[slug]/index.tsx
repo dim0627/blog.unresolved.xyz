@@ -4,12 +4,6 @@ import { InferGetStaticPropsType } from 'next';
 import { getPosts } from '../../lib/contentful';
 import PostDetail from '../../components/PostDetail';
 
-export async function getStaticProps({ params }: any) {
-  const post = (await getPosts({ 'fields.slug': params.slug }))[0];
-
-  return { props: { post: post.fields } };
-}
-
 export async function getStaticPaths() {
   const posts = await getPosts();
   const paths = posts.map((post) => ({ params: { slug: post.fields.slug } }));
@@ -18,6 +12,12 @@ export async function getStaticPaths() {
     paths,
     fallback: false,
   };
+}
+
+export async function getStaticProps({ params }: any) {
+  const post = (await getPosts({ 'fields.slug': params.slug }))[0];
+
+  return { props: { post: post.fields } };
 }
 
 const Index = ({ post }: InferGetStaticPropsType<typeof getStaticProps>) => (

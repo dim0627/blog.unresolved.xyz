@@ -6,7 +6,7 @@ import Container from '../components/Container';
 import PostNeedle from '../components/PostNeedle';
 
 export async function getStaticProps() {
-  const posts = (await getPosts()).map((item) => item.fields);
+  const posts = (await getPosts({ order: '-fields.date' })).map((item) => item.fields);
 
   return {
     props: { posts },
