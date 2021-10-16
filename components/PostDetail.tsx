@@ -1,22 +1,27 @@
 import React from 'react';
 import { DiscussionEmbed } from 'disqus-react';
 import ReactMarkdown from 'react-markdown';
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { monokai } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { nord } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import { Container } from './Container';
 import { AuthorNeedle } from './AuthorNeedle';
 import styles from './PostDetail.module.scss';
 
-const CodeBlock = ({
-  inline, className, children,
-}) => (
-  inline ? <code>{children}</code>
-    : (
-      <SyntaxHighlighter language={className} style={monokai}>
-        {children}
-      </SyntaxHighlighter>
-    )
-);
+const CodeBlock = ({ inline, className, children }) => {
+  if (inline) {
+    return <code className={className}>{children}</code>;
+  }
+  const match = /language-(\w+)/.exec(className || '');
+  const lang = match && match[1] ? match[1] : '';
+  return (
+    <SyntaxHighlighter
+      style={nord}
+      language={lang}
+    >
+      {String(children).replace(/\n$/, '')}
+    </SyntaxHighlighter>
+  );
+};
 
 const PostDetail = ({ post }) => (
   <article className={styles.detail}>
@@ -47,9 +52,7 @@ const PostDetail = ({ post }) => (
       <div className={styles.body}>
         <ReactMarkdown
           components={{
-            code: ({
-              inline, className, children,
-            }) => <CodeBlock className={className} inline={inline}>{children}</CodeBlock>,
+            code: CodeBlock,
           }}
         >
           {post.body}
