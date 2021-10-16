@@ -2,8 +2,13 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { GitHub, Twitter } from 'react-feather';
 import styles from './AuthorNeedle.module.scss';
+import { Author } from '../lib/contentful';
 
-const AuthorNeedle = ({ author }) => (
+interface Props {
+  author: Author
+}
+
+const AuthorNeedle: React.VFC<Props> = ({ author }) => (
   <div className={styles.author}>
     <div className={styles.title}>Author</div>
     <div className={styles.body}>
@@ -38,4 +43,4 @@ const AuthorNeedle = ({ author }) => (
   </div>
 );
 
-export { AuthorNeedle };
+export default AuthorNeedle;

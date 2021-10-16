@@ -21,9 +21,7 @@ module.exports = {
   ],
   rules: {
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
-    'import/extensions': ['error', 'ignorePackages', {
-      js: 'never', jsx: 'never', ts: 'never', tsx: 'never',
-    }],
+    'import/extensions': 'off',
     'react/jsx-props-no-spreading': 'off',
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
@@ -31,5 +29,19 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'error',
     'jsx-a11y/anchor-is-valid': 'off',
     'no-underscore-dangle': 'off',
+    'react/prop-types': 'off',
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: [
+          '.js',
+          '.jsx',
+          '.json',
+          '.ts',
+          '.tsx',
+        ],
+      },
+    },
   },
 };

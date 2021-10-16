@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import { InferGetStaticPropsType } from 'next';
 import { getPosts } from '../../lib/contentful';
-import { PostDetail } from '../../components/PostDetail';
+import PostDetail from '../../components/PostDetail';
 
 export async function getStaticProps({ params }: any) {
   const post = (await getPosts({ 'fields.slug': params.slug }))[0];

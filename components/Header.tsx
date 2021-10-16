@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Container } from './Container';
+import Container from './Container';
 import styles from './Header.module.css';
 
 const Header = () => (
@@ -13,4 +13,4 @@ const Header = () => (
   </Container>
 );
 
-export { Header };
+export default Header;
