@@ -133,6 +133,12 @@
     margin: 0 !important;
     padding: 0 !important;
 
+    @media (max-width: 600px) {
+      margin: 0 calc(var(--spacer) * -1) !important;
+      padding: 1rem !important;
+      border-radius: 0 !important;
+    }
+
     pre {
       margin: 2rem -1.5rem !important;
       padding: 1rem 1.5rem !important;
@@ -144,14 +150,9 @@
       line-height: 1.25rem !important;
 
       @media (max-width: 600px) {
-        margin: 0 -1.5rem !important;
+        margin: 0 calc(var(--spacer) * -1) !important;
+        border-radius: 0 !important;
       }
-    }
-
-    @media (max-width: 600px) {
-      margin: 0 calc(var(--spacer) * -1) !important;
-      padding: 1rem !important;
-      border-radius: 0 !important;
     }
   }
 }
