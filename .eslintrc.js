@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     browser: true,
-    es6: true,
+    es2021: true,
   },
   extends: [
     'plugin:react/recommended',
@@ -12,7 +12,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 11,
+    ecmaVersion: 12,
     sourceType: 'module',
   },
   plugins: [
@@ -20,22 +20,27 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
-    'import/prefer-default-export': 'off',
+    'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     'import/extensions': 'off',
-    'react/prop-types': 'off',
-    'react/jsx-filename-extension': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
     'jsx-a11y/anchor-is-valid': 'off',
+    'no-underscore-dangle': 'off',
+    'react/prop-types': 'off',
   },
   settings: {
-    "import/resolver": {
-      "node": {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
+    'import/resolver': {
+      node: {
+        extensions: [
+          '.js',
+          '.jsx',
+          '.json',
+          '.ts',
+          '.tsx',
+        ],
       },
     },
   },

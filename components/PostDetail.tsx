@@ -3,11 +3,12 @@ import { DiscussionEmbed } from 'disqus-react';
 import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { nord } from 'react-syntax-highlighter/dist/cjs/styles/prism';
-import { Container } from './Container';
-import { AuthorNeedle } from './AuthorNeedle';
+import Container from './Container';
+import AuthorNeedle from './AuthorNeedle';
 import styles from './PostDetail.module.scss';
+import { Post } from '../lib/contentful';
 
-const CodeBlock = ({ inline, className, children }) => {
+const CodeBlock = ({ inline, className, children }: any) => {
   if (inline) {
     return <code className={className}>{children}</code>;
   }
@@ -23,7 +24,11 @@ const CodeBlock = ({ inline, className, children }) => {
   );
 };
 
-const PostDetail = ({ post }) => (
+interface Props {
+  post: Post
+}
+
+const PostDetail: React.VFC<Props> = ({ post }) => (
   <article className={styles.detail}>
     <Container>
       <header className={styles.heading}>
@@ -79,4 +84,4 @@ const PostDetail = ({ post }) => (
   </article>
 );
 
-export { PostDetail };
+export default PostDetail;

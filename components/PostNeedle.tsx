@@ -1,8 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './PostNeedle.module.css';
+import { Post } from '../lib/contentful';
 
-const PostNeedle = ({ post }) => (
+interface Props {
+  post: Post
+}
+
+const PostNeedle: React.VFC<Props> = ({ post }) => (
   <article className={styles.needle}>
     <span className={styles.postedAt}>{(new Date(post.date)).toDateString()}</span>
     <h2 className={styles.title}>
@@ -13,4 +18,4 @@ const PostNeedle = ({ post }) => (
   </article>
 );
 
-export { PostNeedle };
+export default PostNeedle;

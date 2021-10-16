@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint:js": "yarn eslint './{lib,pages,components}/**/*.{js,jsx,ts,tsx}'",
-    "lint:css": "yarn stylelint './{pages,components}/*.{scss,css}'"
+    "lint:js": "eslint './{lib,pages,components}/**/*.{js,jsx,ts,tsx}'",
+    "lint:css": "stylelint './{pages,components}/*.{scss,css}'"
   },
   "dependencies": {
     "contentful": "^9.0.3",
@@ -23,8 +23,10 @@
   "devDependencies": {
     "@types/node": "^16.10.3",
     "@types/react": "^17.0.27",
-    "@typescript-eslint/eslint-plugin": "^4.0.0",
-    "@typescript-eslint/parser": "^3.10.1",
+    "@types/react-syntax-highlighter": "^13.5.2",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "bundlemon": "^1.1.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.24.2",
