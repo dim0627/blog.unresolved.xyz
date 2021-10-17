@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  margin: 1.5rem 0;
+
+  @media (max-width: 600px) {
+    display: block;
+  }
+}
+
+.item {
+  list-style: none;
+
+  + .item {
+    margin-left: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    margin: .5rem 0;
+  }
+}
+
+.anchor {
+  display: block;
+  padding: .75rem 1rem;
+  border-radius: 4px;
+  color: #fff;
+
+  &.fb {
+    background: linear-gradient(90deg, #3b5998, #5f7ec1);
+    box-shadow: 0 8px 48px -8px #3b5998;
+  }
+
+  &.tw {
+    background: linear-gradient(90deg, #1da1f2, #65bff6);
+    box-shadow: 0 8px 48px -8px #1da1f2;
+  }
+}

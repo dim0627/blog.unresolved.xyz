@@ -7,6 +7,8 @@ import Container from './Container';
 import AuthorNeedle from './AuthorNeedle';
 import styles from './PostDetail.module.scss';
 import { Post } from '../lib/contentful';
+import Share from './Share';
+import fullPath from '../lib/fullPath';
 
 const CodeBlock = ({ inline, className, children }: any) => {
   if (inline) {
@@ -45,6 +47,7 @@ const PostDetail: React.VFC<Props> = ({ post }) => (
           {post.body}
         </ReactMarkdown>
       </div>
+      <Share title={post.title} url={fullPath(post.slug)} />
       <div className={styles.author}>
         <AuthorNeedle author={post.author.fields} />
       </div>
