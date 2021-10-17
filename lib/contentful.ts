@@ -17,21 +17,11 @@ export interface Author {
   }
 }
 
-export interface Category {
-  sys: {
-    id: string
-  }
-  fields: {
-    title: string
-  }
-}
-
 export interface Post {
   title: string
   slug: string
   body: string
   date: string
-  category: Category[]
   heroPhoto: {
     fields: {
       file: {

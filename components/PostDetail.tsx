@@ -34,20 +34,6 @@ const PostDetail: React.VFC<Props> = ({ post }) => (
       <header className={styles.heading}>
         <span className={styles.postedAt}>{(new Date(post.date)).toDateString()}</span>
         <h1 className={styles.title}>{post.title}</h1>
-        {post.category
-            && (
-            <ul className={styles.categories}>
-              {
-                post.category.map(
-                  (category) => (
-                    <li key={category.sys.id} className={styles.categoryItem}>
-                      {category.fields.title}
-                    </li>
-                  ),
-                )
-              }
-            </ul>
-            )}
       </header>
       <div className={styles.body}>
         <ReactMarkdown
