@@ -1,8 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
 import { InferGetStaticPropsType } from 'next';
+import { promises } from 'fs';
 import { getPosts } from '../../lib/contentful';
 import PostDetail from '../../components/PostDetail';
+import fullPath from '../../lib/fullPath';
 
 export async function getStaticPaths() {
   const posts = await getPosts();
@@ -17,10 +19,13 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: any) {
   const post = (await getPosts({ 'fields.slug': params.slug }))[0];
 
-  return { props: { post: post.fields } };
+  const ogpImages = await promises.readdir('public/ogp');
+  const ogImageUrl = fullPath(`ogp/${ogpImages[Math.floor(Math.random() * ogpImages.length)]}`);
+
+  return { props: { post: post.fields, ogImageUrl } };
 }
 
-const Index = ({ post }: InferGetStaticPropsType<typeof getStaticProps>) => (
+const Index = ({ post, ogImageUrl }: InferGetStaticPropsType<typeof getStaticProps>) => (
   <>
     <Head>
       <title>
@@ -35,12 +40,12 @@ const Index = ({ post }: InferGetStaticPropsType<typeof getStaticProps>) => (
       <meta property="og:type" content="website" />
       <meta property="og:description" content={post.body} />
       <meta property="og:url" content={`https://blog.unresolved.xyz/${post.slug}`} />
-      <meta property="og:image" content={post.heroPhoto.fields.file.url} />
+      <meta property="og:image" content={ogImageUrl} />
       <meta name="twitter:title" content={post.title} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:description" content={post.body} />
       <meta name="twitter:url" content={`https://blog.unresolved.xyz/${post.slug}`} />
-      <meta name="twitter:image" content={`https:${post.heroPhoto.fields.file.url}`} />
+      <meta name="twitter:image" content={ogImageUrl} />
       <meta name="author" content={post.author.fields.name} />
     </Head>
     <main>
