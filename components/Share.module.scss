@@ -1,10 +1,6 @@
 .wrapper {
   display: flex;
   margin: 1.5rem 0;
-
-  @media (max-width: 600px) {
-    display: block;
-  }
 }
 
 .item {
@@ -12,11 +8,6 @@
 
   + .item {
     margin-left: 1rem;
-  }
-
-  @media (max-width: 600px) {
-    width: 100%;
-    margin: .5rem 0;
   }
 }
 
