@@ -49,11 +49,6 @@ const PostDetail: React.VFC<Props> = ({ post }) => (
             </ul>
             )}
       </header>
-    </Container>
-    <div className={styles.hero}>
-      <img src={post.heroPhoto.fields.file.url} className={styles.heroImg} alt={post.title} />
-    </div>
-    <Container>
       <div className={styles.body}>
         <ReactMarkdown
           components={{
