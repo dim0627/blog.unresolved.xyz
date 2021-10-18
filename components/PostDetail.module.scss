@@ -131,6 +131,7 @@
 
       @media (max-width: 600px) {
         margin: 0 calc(var(--spacer) * -1) !important;
+        padding: 1rem var(--spacer) !important;
         border-radius: 0 !important;
       }
     }
