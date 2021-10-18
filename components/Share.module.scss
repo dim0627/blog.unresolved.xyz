@@ -12,7 +12,8 @@
 }
 
 .anchor {
-  display: block;
+  display: inline-flex;
+  align-items: center;
   padding: .75rem 1rem;
   border-radius: 4px;
   color: #fff;
