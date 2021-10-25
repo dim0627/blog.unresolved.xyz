@@ -130,7 +130,7 @@
       line-height: 1.25rem !important;
 
       @media (max-width: 600px) {
-        margin: 0 calc(var(--spacer) * -1) !important;
+        margin: 0 0 !important;
         padding: 1rem calc(var(--spacer) * 2) !important;
         border-radius: 0 !important;
       }
