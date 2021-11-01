@@ -934,21 +934,21 @@ builtin-status-codes@^3.0.0:
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
 
-bundlemon-utils@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/bundlemon-utils/-/bundlemon-utils-0.3.1.tgz#84a47a231bb7f8446f84fdf9ca1910dba59d3c53"
-  integrity sha512-ep9a3tkQiv9PdY6WkGGiHFzEZDbRlZAcNSrz4RwbpLjKaRop71Lcp/AAKdS3xUV1H/MBhd5xyWP1H34x0c/oVA==
+bundlemon-utils@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/bundlemon-utils/-/bundlemon-utils-0.3.2.tgz#f20ffa066f7bf8b637e37b72f5d82af2959ae509"
+  integrity sha512-xjKeUDInNREYm6jNvGLswIaDEPpfqkw4X0EyGDrlNnwyC/R1xbh6tUHwDqkQYH0i3OiR9JKPFOk0V278MJQuWg==
   dependencies:
     bytes "^3.1.0"
 
-bundlemon@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/bundlemon/-/bundlemon-1.1.0.tgz#479ee294ffae869e49046a5efd00efa82e7d485c"
-  integrity sha512-K0x1/nBynT7Y4fEMODNpSbTKsm9UTfqjTYxUpkM7uUWMi5vhNYLQ4IlIDVQPSpaduuiEPxVitgsdPiB8Uy3NkQ==
+bundlemon@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/bundlemon/-/bundlemon-1.1.1.tgz#ccc50e951cc21829844836d76eaab5eb6f62f83d"
+  integrity sha512-7lgXDe1ZzwYv8wsYjGvM3NZhnlIQCmdjBxOaQBaACxEAOj2a5k+Ph6EwqDVjf4kZ6Sn2n1/KV/Il0PsMNojS2Q==
   dependencies:
     axios "^0.21.1"
     brotli-size "^4.0.0"
-    bundlemon-utils "^0.3.1"
+    bundlemon-utils "^0.3.2"
     bytes "^3.1.0"
     chalk "^4.1.1"
     commander "^8.0.0"
