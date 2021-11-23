@@ -63,7 +63,7 @@
     font-weight: 900;
 
     &::before {
-      content: '##';
+      content: "##";
       display: block;
       color: var(--color-main-shallow);
     }
@@ -75,7 +75,7 @@
     font-weight: 900;
 
     &::before {
-      content: '###';
+      content: "###";
       display: block;
       color: var(--color-main-shallow);
     }
@@ -130,7 +130,7 @@
       line-height: 1.25rem !important;
 
       @media (max-width: 600px) {
-        margin: 0 0 !important;
+        margin: 0 !important;
         padding: 1rem var(--spacer) !important;
         border-radius: 0 !important;
       }

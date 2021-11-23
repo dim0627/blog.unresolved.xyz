@@ -1,8 +1,3 @@
-::-moz-selection {
-  background: var(--color-accent-text);
-  color: #fff;
-}
-
 ::selection {
   background: var(--color-accent-text);
   color: #fff;
@@ -15,8 +10,8 @@
 :root {
   --font-family-mono: menlo, monospace;
   --color-main: #2f163b;
-  --color-main-shallow: rgba(47, 22, 59, .2);
-  --color-main-border: rgba(47, 22, 59, .1);
+  --color-main-shallow: rgb(47 22 59 / 20%);
+  --color-main-border: rgb(47 22 59 / 10%);
   --color-base-text: #2f163b;
   --color-accent-text: #fb7963;
   --radius-base: 18px;
@@ -28,7 +23,18 @@ body {
   margin: 0;
   padding: 0;
   color: var(--color-base-text);
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
