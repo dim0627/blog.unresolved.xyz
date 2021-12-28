@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { nord } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import toc from 'remark-toc';
+import slug from 'rehype-slug';
 import Container from './Container';
 import AuthorNeedle from './AuthorNeedle';
 import styles from './PostDetail.module.scss';
@@ -45,6 +46,7 @@ const PostDetail: React.VFC<Props> = ({ post }) => (
             code: CodeBlock,
           }}
           remarkPlugins={[[toc, { tight: true }]]}
+          rehypePlugins={[slug]}
         >
           {post.body}
         </ReactMarkdown>
