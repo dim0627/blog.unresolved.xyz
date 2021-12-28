@@ -44,7 +44,7 @@ const PostDetail: React.VFC<Props> = ({ post }) => (
             // @ts-ignore
             code: CodeBlock,
           }}
-          remarkPlugins={[toc]}
+          remarkPlugins={[[toc, { tight: true }]]}
         >
           {post.body}
         </ReactMarkdown>
