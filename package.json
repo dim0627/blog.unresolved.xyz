@@ -21,7 +21,7 @@
     "rehype-raw": "^6.1.1",
     "rehype-slug": "^5.0.1",
     "remark-toc": "^8.0.1",
-    "sass": "^1.54.0"
+    "sass": "^1.54.3"
   },
   "devDependencies": {
     "@types/node": "^18.6.1",
