@@ -712,33 +712,33 @@ confusing-browser-globals@^1.0.10:
   resolved "https://registry.yarnpkg.com/confusing-browser-globals/-/confusing-browser-globals-1.0.10.tgz#30d1e7f3d1b882b25ec4933d1d1adac353d20a59"
   integrity sha512-gNld/3lySHwuhaVluJUKLePYirM3QNCKzVxqAdhJII9/WXKVX5PURzMVJspS1jTslSqjeuG4KMVTSouit5YPHA==
 
-contentful-resolve-response@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/contentful-resolve-response/-/contentful-resolve-response-1.3.0.tgz#79530897b109d326c47a32c4b327afa04966cbb7"
-  integrity sha512-FFa4it5VXW1YGyim5rhPbnwmN4c8OcmkpLrsylTL2Y1YpoC+6qnZSSU/QZyvHomLdEgwXaSXhGVJkWjpdz5IMg==
+contentful-resolve-response@^1.3.12:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/contentful-resolve-response/-/contentful-resolve-response-1.6.2.tgz#2fa6b4edc56d7a6220d06ba35d099a7e25c2d9b3"
+  integrity sha512-C4j/VA+SPjgVa7IxeuUagE++B/3WG+P6meFLu7u5DKDU1Tizayc4f2Y7Pb8ZN7yx+wEOoaGZvmlV/zePPnXmRQ==
   dependencies:
-    fast-copy "^2.1.0"
+    fast-copy "^2.1.7"
 
-contentful-sdk-core@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/contentful-sdk-core/-/contentful-sdk-core-7.0.1.tgz#a38e10d6742e383076f1cb031a5e43b364cecba6"
-  integrity sha512-3m3RTmQHEnlOtx6f9PvkKgrv5Qpzjo8X+NysBXshCYK8OEG/vNbsfsdOaiURAxcVMQ/9vM14Og+fc+aMx79Lsg==
+contentful-sdk-core@^7.0.5:
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/contentful-sdk-core/-/contentful-sdk-core-7.0.5.tgz#d7ad000d12da639f6ccf425e55591b4f2305f103"
+  integrity sha512-GG+DvFRwaoTeco072WjN+uyfpHs8Gilxl3ryJcXo3mlxeN/A/inbAqhX+RrKB5HNOVREdNWeMBAg0D7hLvlBXQ==
   dependencies:
-    fast-copy "^2.1.0"
+    fast-copy "^2.1.7"
     lodash.isplainobject "^4.0.6"
     lodash.isstring "^4.0.1"
     p-throttle "^4.1.1"
     qs "^6.9.4"
 
-contentful@^9.1.33:
-  version "9.1.33"
-  resolved "https://registry.yarnpkg.com/contentful/-/contentful-9.1.33.tgz#1305254c647578ad981eae59fae1abdb07b50b6a"
-  integrity sha512-iiu2cC/9JvDrTK6cfSHhZ1iW6dOq+NmYMA2p5Thpv+9h2pEOyoHm1Un9Xir5XZSB11bu4POmo6JazGAn9N0tqg==
+contentful@^9.2.18:
+  version "9.2.18"
+  resolved "https://registry.yarnpkg.com/contentful/-/contentful-9.2.18.tgz#2eb50986276afc802b674e8c5c9acc3441819f68"
+  integrity sha512-O1fSO45bmzMS7/EYaWR48Ph3jn1o1csE3DtgUldoblOv8JF2x3sxRGJh+VTg12bNrUShiuotHhnmivh4sQ90yw==
   dependencies:
     axios "^0.27.0"
-    contentful-resolve-response "^1.3.0"
-    contentful-sdk-core "^7.0.1"
-    fast-copy "^2.1.0"
+    contentful-resolve-response "^1.3.12"
+    contentful-sdk-core "^7.0.5"
+    fast-copy "^2.1.7"
     json-stringify-safe "^5.0.1"
 
 core-js-pure@^3.0.0:
@@ -1216,10 +1216,10 @@ extend@^3.0.0:
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
   integrity sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==
 
-fast-copy@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/fast-copy/-/fast-copy-2.1.0.tgz#99c1b842aee063f8212d6f749080c196a822b293"
-  integrity sha512-j4VxAVJsu9NHveYrIj0+nJxXe2lOlibKTlyy0jH8DBwcuV6QyXTy0zTqZhmMKo7EYvuaUk/BFj/o6NU6grE5ag==
+fast-copy@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/fast-copy/-/fast-copy-2.1.7.tgz#affc9475cb4b555fb488572b2a44231d0c9fa39e"
+  integrity sha512-ozrGwyuCTAy7YgFCua8rmqmytECYk/JYAMXcswOcm0qvGoE3tPb7ivBeIHTOK2DiapBhDZgacIhzhQIKU5TCfA==
 
 fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
